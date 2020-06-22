@@ -1,0 +1,14 @@
+// main: ../style.scss
+
+.title-page{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3em;
+  letter-spacing: 5px;
+  border: 1px solid;
+
+  @include responsive(XS){
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
+}

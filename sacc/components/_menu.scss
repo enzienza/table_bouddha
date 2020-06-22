@@ -1,0 +1,89 @@
+// main: ../style.scss
+
+.navbar{
+  font-family: $font-secondary;
+  letter-spacing: 1px;
+}
+
+
+// class du <ul>
+.navbar-nav {
+  font-family: arial;
+
+  // <li.current-menu-item> page currente
+  .current-menu-item{
+    .nav-link{
+      /* couleur du texte en court */
+      display: block;
+      //color: aqua;
+
+      &::before {
+          left: 0;
+          right: 60%;
+          transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+      }
+      &::after {
+          right: 0;
+          left: 60%;
+          transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+      }
+    }
+  }
+
+  // class <li> (tous les items du menu)
+  .nav-item{
+    position: relative;
+    padding: 0 1em;
+    //letter-spacing: 2px;
+
+    .nav-link{
+      //display: block;
+
+      &::after, &::before {
+        background-color: $color-primary;
+      }
+
+      &:hover {
+        //color: $color-primary;
+      }
+
+      &::before {
+        top: 0;
+      }
+      &:hover::before, &:active::before {
+        left: 0;
+        right: 60%;
+        transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+      }
+      &::after {
+        top: auto;
+        bottom: 0;
+      }
+      &:hover::after, &:active::after {
+        right: 0;
+        left: 60%;
+        transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+      }
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+      }
+    }
+  }
+}
+
+
+@include responsive(S){
+  .nav-item{
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
+@include responsive(XS){
+  .nav-item{
+    text-align: center;
+    padding: 1em 0;
+  }
+}

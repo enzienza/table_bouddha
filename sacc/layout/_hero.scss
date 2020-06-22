@@ -1,0 +1,59 @@
+// main: ../style.scss
+
+.hero{
+  height: 100vh;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .jumbtitle{
+    text-align: center;
+    font-family: $font-secondary;
+
+    .logo{
+      width: 14em;
+      height: auto;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      align-items:center;
+      padding-top: 11em;
+    }
+
+    h1{
+      font-size: 5em;
+      color: #FAFAFA;
+    }
+  }
+
+  @include responsive(S){
+    /* height: calc(100vh - 15vh); */
+
+    .jumbtitle{
+      .logo{
+        width: calc(100% - 90%);
+        padding-top: calc(100% - 85%);
+      }
+      h1{
+        font-size: xxx-large;
+      }
+    }
+  }
+
+  @include responsive(XS){
+    height: calc(100vh - 15vh);
+
+    .jumbtitle{
+      /* border: 3px solid lime; */
+      .logo{
+        width: calc(100% / 3);
+        padding-top: calc(100% -50%);
+      }
+      h1{
+        /* font-size: 2em; */
+        font-size: calc(5em / 2);
+      }
+    }
+  }
+}

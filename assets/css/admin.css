@@ -1,0 +1,123 @@
+/*
+Name: Custom Adimin
+Author: Enza Lombardo
+Author URI: http://www.enzalombardo.be
+Description: feuille de style pour personnaliser l'Administration du site
+Version: 1.0
+Text Domain: tablebouddha
+copyright : Enza ©2020
+Tags:
+*/
+
+/*
+  ----- INDEX -----
+
+  1 - Style for the login page
+  2 - style for the generality page
+  3 - Style for the timetable page
+
+*/
+
+
+
+
+
+/* ----------------------------------------------
+ * 1 - Style for the login page
+ */
+body.login{
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+              url('../img/table-bouddha-bar.jpg') no-repeat fixed;
+  background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+              url('../img/table-bouddha-bar.jpg') no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+              url('../img/table-bouddha-bar.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+#pearlIt{
+  background-color: inherit;
+  box-shadow: none;
+}
+
+.login form{
+  border: none;
+}
+
+#login #nav a, #login #backtoblog a{
+  color: white;
+  display: block;
+  background: gray;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 4px rgba(85, 85, 85, 0.7);
+}
+
+h1 a{
+  background: url('../img/logo-login.png') no-repeat !important;
+  width: 257px !important;
+  height: 198px !important;
+}
+
+
+/* ----------------------------------------------
+ * 2 - style for the generality page
+ */
+
+.form-generality h2{
+  padding-top: 1.5em;
+  border-top: 1px solid #cecece;
+  width: 98%;
+}
+
+
+.form-generality .img-logo{
+  width:100px;
+  height:auto;
+}
+
+.form-generality .img-hero{
+  width: 300px;
+  height: auto;
+}
+
+.description{
+  color: #cecece;
+}
+
+
+/* ----------------------------------------------
+ * 3 - Style for the timetable page
+ */
+
+.form-timetable h2{
+  padding-top: 1.5em;
+  border-top: 1px solid #cecece;
+  width: 98%;
+}
+
+.form-timetable .form-table{
+  width: 50%;
+}
+
+.form-timetable tr {
+  border-bottom: 1px solid #cecece;
+}
+
+.form-timetable tr:last-child{
+  border-bottom: none;
+}
+
+.space{
+  margin: 0 1em;
+}
+
+.form-timetable input[type="time"]{
+  width: 6em;
+  text-align: center;
+}
+
+.form-timetable input[type="checkbox"]{
+  margin: 1em !important;
+}

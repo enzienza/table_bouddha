@@ -1,0 +1,37 @@
+// main: ../_mixins.scss
+
+
+// Effet Paralax sur Image de Background
+@mixin bg-img-paralax {
+  background: url($img_url);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// Effet Paralax sur Image de Background avec un degradé lineaire
+@mixin bg-paralax-degrader($img_url){
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+//Effet filtre degradé lineaire sur image
+@mixin filter-lineaire($opacite) {
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+}
+
+@mixin filter-gradient($opacite) {
+  background: -webkit-radial-gradient(circle, rgb(255, 255, 255, $opacite), rgba(255, 255, 255, $opacite));
+  background: -o-radial-gradient(circle, rgb(255, 255, 255, $opacite), rgba(255, 255, 255, $opacite));
+  background: radial-gradient(circle, rgb(255, 255, 255, $opacite), rgba(255, 255, 255, $opacite));
+}
