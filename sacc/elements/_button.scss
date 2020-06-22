@@ -4,7 +4,7 @@ h1{
   font-size: 3em;
   color:#fff;
   background: red;
-  @include responsive(M){
+  @include responsive(MD){
     background: lime;
     color: #fff;
     font-style: 1em;

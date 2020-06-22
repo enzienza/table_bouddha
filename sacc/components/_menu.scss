@@ -74,7 +74,7 @@
 }
 
 
-@include responsive(S){
+@include responsive(SM){
   .nav-item{
     text-align: center;
     padding: 1em 0;
