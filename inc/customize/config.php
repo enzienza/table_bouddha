@@ -123,9 +123,9 @@ if(!function_exists('tablebouddha_register_assets')){
     wp_deregister_script('jquery');
     wp_register_script(
       'jquery',
-      'https://code.jquery.com/jquery-3.4.1.slim.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js',
       [],
-      '3.4.1',
+      '3.5.1',
       true
     );
 

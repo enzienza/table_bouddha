@@ -17,9 +17,12 @@
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
     opacity:0;
+
+
     &:hover{
       text-decoration: none;
       color: $color-light;
+      opacity: 1;
     }
 
     .icons{

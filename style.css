@@ -5828,6 +5828,7 @@ body {
 .scrollTop:hover {
   text-decoration: none;
   color: #FAFAFA;
+  opacity: 1;
 }
 
 .scrollTop .icons {
