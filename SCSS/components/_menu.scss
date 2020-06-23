@@ -3,8 +3,23 @@
 .navbar{
   font-family: $font-secondary;
   letter-spacing: 1px;
+  height: 70px;
+  background-color: transparent;
+  color: $color-light;
 }
 
+.solid{
+  background-color: $color-dark-light;
+  transition: background-color .05s ease 0s;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  .navbar-nav{
+    .nav-link{
+      &::before, &::after{
+        box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
 
 // class du <ul>
 .navbar-nav {
@@ -17,15 +32,17 @@
       display: block;
       //color: aqua;
 
+      &::before, &::after{
+        transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+      }
+
       &::before {
           left: 0;
           right: 60%;
-          transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
       }
       &::after {
           right: 0;
           left: 60%;
-          transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
       }
     }
   }
@@ -75,6 +92,12 @@
 
 
 @include responsive(SM){
+  .navbar{
+    height: auto;
+    .navbar-collapse{
+      padding-top: 1em;
+    }
+  }
   .nav-item{
     text-align: center;
     padding: 1em 0;
@@ -82,6 +105,12 @@
 }
 
 @include responsive(XS){
+  .navbar{
+    height: auto;
+    .navbar-collapse{
+      padding-top: 1em;
+    }
+  }
   .nav-item{
     text-align: center;
     padding: 1em 0;

@@ -23,7 +23,7 @@
 <body>
 
   <div class="header" role="banner">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
 
         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">

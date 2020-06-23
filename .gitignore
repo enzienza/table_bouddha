@@ -17,21 +17,43 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+
 /.DS_Store
-/fonts/.DS_Store
-/fonts/Caviar_Dreams/.DS_Store
-/fonts/simple-line-icon/.DS_Store
-/img/.DS_Store
-/img/icon/.DS_Store
-/SASS/.DS_Store
-/SASS/base/.DS_Store
-/SASS/base/fonts/.DS_Store
-/SASS/helper/.DS_Store
-/SASS/helper/mixins/.DS_Store
-/SASS/layout/.DS_Store
-/SASS/modules/.DS_Store
-/SASS/pages/.DS_Store
-/SASS/vendor/.DS_Store
-/SASS/vendor/bootstrap/.DS_Store
-/js/.DS_Store
-/js/plugins/.DS_Store
+
+# directory "assets"
+/assets/.DS_Store
+/assets/css/.DS_Store
+/assets/fonts/.DS_Store
+/assets/fonts/flaticon/.DS_Store
+/assets/fonts/philisopher/.DS_Store
+/assets/fonts/poppins/.DS_Store
+/assets/img/.DS_Store
+/assets/js/.DS_Store
+/assets/js/plugins/.DS_Store
+
+# directory "inc"
+/inc/.DS_Store
+/inc/customize/.DS_Store
+/inc/metaboxes/.DS_Store
+/inc/options-theme/.DS_Store
+/inc/post-type/.DS_Store
+/inc/taxonomys/.DS_Store
+
+
+# directory "parts"
+/parts/.DS_Store
+/parts/footer/.DS_Store
+
+
+# directory "SCSS"
+/SCSS/.DS_Store
+/SCSS/base/.DS_Store
+/SCSS/base/fonts/.DS_Store
+/SCSS/components/.DS_Store
+/SCSS/elements/.DS_Store
+/SCSS/form/.DS_Store
+/SCSS/layout/.DS_Store
+/SCSS/utilities/.DS_Store
+/SCSS/utilities/mixins/.DS_Store
+/SCSS/vendor/.DS_Store
+/SCSS/vendor/bootstrap/.DS_Store

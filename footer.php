@@ -55,6 +55,10 @@
 </div>
 
 
+<a href="#" class="scrollTop">
+  <span class="icons flaticon-up"></span>
+</a><!-- /.scrollTop -->
+
 <footer role="contentinfo">
   <?php bloginfo('name') ?> ©2020 |
   <!-- Designed by <a href="http://enzalombardo.be" target="_blank">Enza Lombardo</a> -->

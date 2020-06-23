@@ -97,6 +97,23 @@ if(!function_exists('tablebouddha_register_assets')){
     );
     wp_enqueue_script('bootstrap');
 
+    // MY PLUGINS
+    wp_enqueue_script(
+      'solid-navbar',
+      get_template_directory_uri().'/assets/js/plugins/solid-navbar.js',
+      [],
+      '1.0',
+      true
+    );
+
+    wp_enqueue_script(
+      'scroll-top',
+      get_template_directory_uri().'/assets/js/plugins/scroll-top.js',
+      [],
+      '1.0',
+      true
+    );
+
     // wp_register_script('fontawesome', get_template_directory_uri().'/assets/fontawesome/js/all.js');
     // wp_register_script('stickyfill', get_template_directory_uri().'/assets/plugins/stickyfill/dist/stickyfill.min.js');
 
