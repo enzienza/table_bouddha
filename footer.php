@@ -14,7 +14,7 @@
 <div class="footer-info">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-12">
+      <div class="col-md-4 col-12 block-location">
         <h2>Coordonne</h2>
         <div class="row block-logo">
           <div class="col-2">
@@ -33,10 +33,32 @@
               <?php echo get_option('adresse') ?>
             </p>
             <p><?php echo get_option('phone') ?></p>
+
+            <?php if(checked(1, get_option('yes_facebook'), false)) : ?>
+              <a href="<?php echo(get_option('url_facebook')); ?>" target="_blank">
+                <span class="icons flaticon-facebook"></span>
+              </a>
+            <?php endif ?>
+
+            <?php if(checked(1, get_option('yes_instagram'), false)) : ?>
+              <a href="<?php echo(get_option('url_instagram')); ?>" target="_blank">
+                <span class="icons flaticon-instagram"></span>
+              </a>
+            <?php endif ?>
+
+            <?php if(checked(1, get_option('yes_twitter'), false)) : ?>
+              <a href="<?php echo(get_option('url_twitter')); ?>" target="_blank">
+                <span class="icons flaticon-twitter"></span>
+              </a>
+            <?php endif ?>
+
+
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12">
+
+
+      <div class="col-md-4 col-12 block-link">
         <h2>Lien utile</h2>
         <?php
           wp_nav_menu([
@@ -46,7 +68,7 @@
           ]);
          ?>
       </div>
-      <div class="col-md-4 col-12">
+      <div class="col-md-4 col-12 block-timetable">
         <h2>horaire</h2>
         <?php get_template_part('parts/footer/horaire'); ?>
       </div>

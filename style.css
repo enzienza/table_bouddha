@@ -5508,9 +5508,7 @@ body {
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  font-size: 20px;
   font-style: normal;
-  margin-left: 20px;
 }
 
 .flaticon-meal:before {
@@ -5703,6 +5701,10 @@ body {
 
 .flaticon-up-arrow-1:before {
   content: "\f12f";
+}
+
+.flaticon-twitter:before {
+  content: "\f130";
 }
 
 .navbar {
@@ -6005,6 +6007,14 @@ footer a {
 
 .footer-info .blog-address {
   margin-left: 3em;
+}
+
+.footer-info .blog-address .icons {
+  padding-right: .5em;
+}
+
+.footer-info .blog-address .icons:hover {
+  color: #FFBD4E;
 }
 
 .footer-info .address {

@@ -62,11 +62,48 @@ add_filter('login_headertitle', 'custom_login_logo_title');
  * Function customize the CSS on the administration
  */
 add_action('admin_enqueue_scripts', function(){
+  /**
+   * JAVASRIPT
+   */
+
+  // CDN Bootstrap
+  wp_register_script(
+    'bootstrap',
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js',
+    ['popper', 'jquery'],
+    '4.4.1',
+    true
+  );
+  wp_register_script(
+    'popper',
+    'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
+    [],
+    '1.16.0',
+    true
+  );
+  wp_enqueue_script('bootstrap');
+
+
+  /**
+   * STYLE
+   */
+  // CDN Boostrap
+  wp_register_style(
+    'bootstrap',
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
+    [],
+    '4.4.1',
+    false
+  );
+
+  wp_enqueue_style('bootstrap');
   // Personnaliser l'administration
   wp_enqueue_style(
     'admin_tablebouddha',
     get_template_directory_uri().'/assets/css/admin.css'
   );
+
+
 
   // Utilisation des icons 'elegant' dans l'administratrion
   // wp_enqueue_style(

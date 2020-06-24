@@ -38,6 +38,12 @@ footer{
 
   .blog-address{
     margin-left: 3em;
+    .icons{
+      padding-right: .5em;
+      &:hover{
+        color: $color-primary-light;
+      }
+    }
   }
 
   .address{

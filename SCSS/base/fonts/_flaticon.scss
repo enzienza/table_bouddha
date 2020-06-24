@@ -22,9 +22,9 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-        font-size: 20px;
-font-style: normal;
-margin-left: 20px;
+  //font-size: 20px;
+  font-style: normal;
+  //margin-left: 20px;
 }
 
 .flaticon-meal:before { content: "\f100"; }
@@ -75,3 +75,54 @@ margin-left: 20px;
 .flaticon-up-arrow:before { content: "\f12d"; }
 .flaticon-up:before { content: "\f12e"; }
 .flaticon-up-arrow-1:before { content: "\f12f"; }
+.flaticon-twitter:before { content: "\f130"; }
+
+$font-Flaticon-meal: "\f100";
+$font-Flaticon-take-away: "\f101";
+$font-Flaticon-chicken: "\f102";
+$font-Flaticon-bell-covering-hot-dish: "\f103";
+$font-Flaticon-hot-soup: "\f104";
+$font-Flaticon-lunch-box: "\f105";
+$font-Flaticon-beef-steak: "\f106";
+$font-Flaticon-sardine: "\f107";
+$font-Flaticon-preparation: "\f108";
+$font-Flaticon-ice-cream: "\f109";
+$font-Flaticon-muffin: "\f10a";
+$font-Flaticon-food-and-restaurant: "\f10b";
+$font-Flaticon-food-and-restaurant-1: "\f10c";
+$font-Flaticon-cutlery: "\f10d";
+$font-Flaticon-cake-slice: "\f10e";
+$font-Flaticon-chef-hat: "\f10f";
+$font-Flaticon-food-and-restaurant-2: "\f110";
+$font-Flaticon-food-and-restaurant-3: "\f111";
+$font-Flaticon-credit-card: "\f112";
+$font-Flaticon-meat: "\f113";
+$font-Flaticon-steak: "\f114";
+$font-Flaticon-meat-1: "\f115";
+$font-Flaticon-dimsum: "\f116";
+$font-Flaticon-fish: "\f117";
+$font-Flaticon-lobster: "\f118";
+$font-Flaticon-menu: "\f119";
+$font-Flaticon-plate: "\f11a";
+$font-Flaticon-soda: "\f11b";
+$font-Flaticon-cocktail: "\f11c";
+$font-Flaticon-address: "\f11d";
+$font-Flaticon-headphones: "\f11e";
+$font-Flaticon-reservation: "\f11f";
+$font-Flaticon-reserved: "\f120";
+$font-Flaticon-wine: "\f121";
+$font-Flaticon-open: "\f122";
+$font-Flaticon-credit-card-1: "\f123";
+$font-Flaticon-reserved-1: "\f124";
+$font-Flaticon-menu-1: "\f125";
+$font-Flaticon-dish: "\f126";
+$font-Flaticon-facebook: "\f127";
+$font-Flaticon-instagram: "\f128";
+$font-Flaticon-null: "\f129";
+$font-Flaticon-localization: "\f12a";
+$font-Flaticon-phone: "\f12b";
+$font-Flaticon-upwards-arrow: "\f12c";
+$font-Flaticon-up-arrow: "\f12d";
+$font-Flaticon-up: "\f12e";
+$font-Flaticon-up-arrow-1: "\f12f";
+$font-Flaticon-twitter: "\f130";
