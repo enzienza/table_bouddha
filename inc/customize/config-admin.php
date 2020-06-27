@@ -67,37 +67,38 @@ add_action('admin_enqueue_scripts', function(){
    */
 
   // CDN Bootstrap
-  wp_register_script(
-    'bootstrap',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js',
-    ['popper', 'jquery'],
-    '4.4.1',
-    true
-  );
-  wp_register_script(
-    'popper',
-    'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
-    [],
-    '1.16.0',
-    true
-  );
-  wp_enqueue_script('bootstrap');
+  // wp_register_script(
+  //   'bootstrap',
+  //   'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js',
+  //   ['popper', 'jquery'],
+  //   '4.4.1',
+  //   true
+  // );
+  // wp_register_script(
+  //   'popper',
+  //   'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
+  //   [],
+  //   '1.16.0',
+  //   true
+  // );
+  // wp_enqueue_script('bootstrap');
 
 
   /**
    * STYLE
    */
   // CDN Boostrap
-  wp_register_style(
-    'bootstrap',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
-    [],
-    '4.4.1',
-    false
-  );
+  // wp_register_style(
+  //   'bootstrap',
+  //   'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
+  //   [],
+  //   '4.4.1',
+  //   false
+  // );
+  // wp_enqueue_style('bootstrap');
 
-  wp_enqueue_style('bootstrap');
-  // Personnaliser l'administration
+
+  // CUSTOM CSS - Personnaliser l'administration
   wp_enqueue_style(
     'admin_tablebouddha',
     get_template_directory_uri().'/assets/css/admin.css'
@@ -111,3 +112,24 @@ add_action('admin_enqueue_scripts', function(){
   //   get_template_directory_uri().'/assets/plugins/elegant_font/css/style.css'
   // );
 });
+
+
+
+/**
+ * function to remove the dashboard widgets, but only for non-admin users
+ * if you want to remove the widgets for admin(s) too,
+ * remove the 'if' statement within the function
+ */
+// function remove_dashboard_widgets() {
+// 	// if ( ! current_user_can( 'manage_options' ) ) {
+// 		remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+// 		remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+// 		remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+// 		remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+// 		remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+// 		remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+// 		remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+// 		remove_meta_box( 'dashboard_secondary', 'dashboard', 'side' );
+// 	// }
+// }
+// add_action( 'wp_dashboard_setup', 'remove_dashboard_widgets' );

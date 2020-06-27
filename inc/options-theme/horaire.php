@@ -31,6 +31,7 @@
     const SUB_MENU   = 'Horaire';
     const PERMITION  = 'manage_options';
     const SUB_GROUP  = 'timetable_tablebouddha';
+    const NONCE      = '_timetable_tablebouddha';
 
 
     // definit les section
@@ -71,8 +72,11 @@
          </p>
        </div>
        <form class="form-timetable" action="options.php" method="post" enctype="multipart/form-data">
-         <?php settings_fields(self::SUB_GROUP); ?>
-         <?php do_settings_sections(self::SUB_GROUP); ?>
+         <?php
+            wp_nonce_field(self::NONCE, self::NONCE);
+            settings_fields(self::SUB_GROUP);
+            do_settings_sections(self::SUB_GROUP);
+          ?>
          <?php submit_button(); ?>
        </form>
      <?php

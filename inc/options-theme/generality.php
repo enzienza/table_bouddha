@@ -32,6 +32,7 @@ class tablebouddha_generality{
    const PERMITION  = 'manage_options';
    const DASHICON   = 'dashicons-admin-generic';
    const GROUP      = 'generality_tablebouddha';
+   const NONCE      = '_generality_tablebouddha';
 
 
    // definit les section
@@ -66,6 +67,7 @@ class tablebouddha_generality{
    * 4 - TEMPLATE DES PAGES
    */
   public static function render(){
+
     ?>
       <div class="wrap">
         <h1 class="wp-heagin-inline">Table Bouddha</h1>
@@ -74,8 +76,11 @@ class tablebouddha_generality{
         </p>
       </div>
       <form class="form-generality" action="options.php" method="post" enctype="multipart/form-data">
-        <?php settings_fields(self::GROUP); ?>
-        <?php do_settings_sections(self::GROUP); ?>
+        <?php
+          wp_nonce_field(self::NONCE, self::NONCE);
+          settings_fields(self::GROUP);
+          do_settings_sections(self::GROUP);
+        ?>
         <?php submit_button(); ?>
       </form>
     <?php
