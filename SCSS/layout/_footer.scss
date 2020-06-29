@@ -1,20 +1,17 @@
 // main: ../style.scss
 
-footer{
-  background: $color-dark-light;
-  color: $color-grey-light;
-  text-align: center;
-  padding: 10px 0;
-  line-height: 1.7;
-  font-size: small;
-  a{
-    color: $color-primary;
-  }
-}
+
+
+/* .position-footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+} */
 
 .footer-info{
-  background: $color-dark-light;
+  background: $color-dark;
   color: $color-grey-light;
+  padding-bottom: 1em;
 
   h2{
     color:$color-primary;
@@ -59,7 +56,30 @@ footer{
   .navbar-nav{
     margin-left: 8em;
   }
+
+
+  .block-link{
+    .page_item:hover{
+      color: $color-primary-light;
+    }
+  }
 }
+
+footer{
+  background: $color-dark;
+  color: $color-grey-light;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 2;
+  font-size: small;
+  a{
+    color: $color-primary;
+    &:hover{
+      color: $color-primary-light;
+    }
+  }
+}
+
 
 @include responsive(MD){
   .footer-info{

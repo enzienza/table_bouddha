@@ -5439,6 +5439,8 @@ a:hover {
 
 body {
   font-family: "poppins";
+  background: #212529;
+  color: #FAFAFA;
 }
 
 @font-face {
@@ -5979,22 +5981,15 @@ body {
   }
 }
 
-footer {
-  background: #212529;
-  color: #919191;
-  text-align: center;
-  padding: 10px 0;
-  line-height: 1.7;
-  font-size: small;
-}
-
-footer a {
-  color: #F5A623;
-}
-
+/* .position-footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+} */
 .footer-info {
-  background: #212529;
+  background: #111;
   color: #919191;
+  padding-bottom: 1em;
 }
 
 .footer-info h2 {
@@ -6039,6 +6034,27 @@ footer a {
 
 .footer-info .navbar-nav {
   margin-left: 8em;
+}
+
+.footer-info .block-link .page_item:hover {
+  color: #FFBD4E;
+}
+
+footer {
+  background: #111;
+  color: #919191;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 2;
+  font-size: small;
+}
+
+footer a {
+  color: #F5A623;
+}
+
+footer a:hover {
+  color: #FFBD4E;
 }
 
 @media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {

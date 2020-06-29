@@ -86,6 +86,8 @@
   <!-- Designed by <a href="http://enzalombardo.be" target="_blank">Enza Lombardo</a> -->
   Created by <a href="http://www.enzalombardo.be/" target="_blank">Enza Lombardo</a>
 </footer>
+
+
 <?php wp_footer(); ?>
 </body>
 </html>
