@@ -1,0 +1,80 @@
+// main: ../style.scss
+
+
+.filter{
+  height: 90vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+
+  .jumbtitle{
+    text-align: center;
+    font-family: $font-secondary;
+    color: $color-light;
+    padding-top:10%;
+
+    .logo{
+      width: 14em;
+      height: auto;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      align-items:center;
+    }
+    h1{
+      font-size: 5em;
+    }
+  }
+  .container{
+    h1{
+      font-size:2em;
+    }
+  }
+  .view-message{
+    align-self: center;
+    font-size: 1.5em;
+  }
+}
+
+.info-contact{
+  color: $color-light;
+  display: flex;
+  justify-content:center;
+
+  ul{
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .item-info-contact{
+    display: inline-flex;
+    line-height: 2;
+    margin-right: 2rem;
+
+    .icons{
+      font-size: 1rem;
+      margin-right: 15px;
+    }
+
+    p{
+      font-size: 1rem;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+#bg-image{
+  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .filter{
+    height: 100vh;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+  }
+}

@@ -5910,17 +5910,30 @@ body {
   }
 }
 
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
 .hero {
   height: 100vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
 }
 
 .hero .jumbtitle {
   text-align: center;
   font-family: "philosopher";
+  color: #FAFAFA;
 }
 
 .hero .jumbtitle .logo {
@@ -5934,7 +5947,6 @@ body {
 
 .hero .jumbtitle h1 {
   font-size: 5em;
-  color: #FAFAFA;
 }
 
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
@@ -6088,4 +6100,83 @@ footer a {
     margin-left: 1em;
     align-items: center;
   }
+}
+
+.filter {
+  height: 90vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
+}
+
+.filter .jumbtitle {
+  text-align: center;
+  font-family: "philosopher";
+  color: #FAFAFA;
+  padding-top: 10%;
+}
+
+.filter .jumbtitle .logo {
+  width: 14em;
+  height: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.filter .jumbtitle h1 {
+  font-size: 5em;
+}
+
+.filter .container h1 {
+  font-size: 2em;
+}
+
+.filter .view-message {
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.info-contact {
+  color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+}
+
+.info-contact ul {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.info-contact .item-info-contact {
+  display: inline-flex;
+  line-height: 2;
+  margin-right: 2rem;
+}
+
+.info-contact .item-info-contact .icons {
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.info-contact .item-info-contact p {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+#bg-image {
+  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bg-image .filter {
+  height: 100vh;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
 }

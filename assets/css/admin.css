@@ -13,8 +13,10 @@ Tags:
   ----- INDEX -----
 
   1 - Style for the login page
-  2 - style for the generality page
-  3 - Style for the timetable page
+  2 - style for ALL administatrion
+  3 - style for the generality page
+  4 - Style for the timetable page
+  5 - Style for the customtheme page
 
 */
 
@@ -105,8 +107,13 @@ form h2{
   width: 98%;
   font-size: 1.3em;
 }
+
+.img-hero{
+  width: 300px;
+  height: auto;
+}
 /* ----------------------------------------------
- *  - style for the generality page
+ * 3 - style for the generality page
  */
 
 
@@ -115,18 +122,13 @@ form h2{
   height:auto;
 }
 
-.form-generality .img-hero{
-  width: 300px;
-  height: auto;
-}
-
 .description{
   color: #cecece;
 }
 
 
 /* ----------------------------------------------
- *  - Style for the timetable page
+ * 4 - Style for the timetable page
  */
 
 /* .form-timetable h2{
@@ -158,4 +160,25 @@ form h2{
 
 .form-timetable input[type="checkbox"]{
   margin: 1em !important;
+}
+
+/* ----------------------------------------------
+ * 5 - Style for the customtheme page
+ */
+
+.importers{
+  margin-top: 2.5em;
+}
+
+.importers .import-system{
+  width: 130px;
+  font-weight: bolder;
+}
+
+.importers td.desc{
+  width: 400px;
+}
+
+.height-space{
+  padding: .5em 0;
 }

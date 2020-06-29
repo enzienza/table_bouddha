@@ -40,6 +40,12 @@ tablebouddha_generality::register();
 require_once('inc/options-theme/horaire.php');
 tablebouddha_timetable::register();
 
+require_once('inc/options-theme/custom-theme.php');
+tablebouddha_customtheme::register();
+
+require_once('inc/options-theme/custom-homepage.php');
+tablebouddha_custom_homepage::register();
+
 
 /**
  * 3 - Post-Type

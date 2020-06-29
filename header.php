@@ -21,7 +21,6 @@
   <?php wp_head(); ?>
 </head>
 <body>
-
   <div class="header" role="banner">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
@@ -53,10 +52,3 @@
       </div>
     </nav>
   </div><!-- /.header -->
-
-  <div class="hero" style="background-image: url(<?php echo get_option('img_hero') ?>)">
-    <div class="jumbtitle">
-      <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="">
-      <h1>Table Bouddha</h1>
-    </div>
-  </div>

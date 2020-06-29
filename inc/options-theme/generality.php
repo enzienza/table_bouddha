@@ -38,7 +38,7 @@ class tablebouddha_generality{
    // definit les section
    const SECTION_IMG    = 'section_image_tablebouddha';
    const SECTION_INFO   = 'section_info_tablebouddha';
-   const SECTION_url    = 'section_url_tablebouddha';
+   const SECTION_URL    = 'section_url_tablebouddha';
 
   /**
    * 2 - DEFINIR LES HOOKS ACTIONS
@@ -122,7 +122,7 @@ class tablebouddha_generality{
     ); // Section 2
 
     add_settings_section(
-      self::SECTION_url,                       // SLUG_SECTION
+      self::SECTION_URL,                       // SLUG_SECTION
       'Les réseaux sociaux',                      // TITLE
       [self::class, 'display_section_url'],    // CALLBACK
       self::GROUP
@@ -166,7 +166,7 @@ class tablebouddha_generality{
       'Facebook (url)',                                // LABEL
       [self::class,'field_facebook_tablebouddha'],     // CALLBACK
       self::GROUP ,                                    // SLUG_PAGE
-      self::SECTION_url
+      self::SECTION_URL
     );
 
     add_settings_field(
@@ -174,7 +174,7 @@ class tablebouddha_generality{
       'Instagram (url)',                                // LABEL
       [self::class,'field_instagram_tablebouddha'],     // CALLBACK
       self::GROUP ,                                     // SLUG_PAGE
-      self::SECTION_url
+      self::SECTION_URL
     );
 
     add_settings_field(
@@ -182,7 +182,7 @@ class tablebouddha_generality{
       'Twitter (url)',                                // LABEL
       [self::class,'field_twitter_tablebouddha'],     // CALLBACK
       self::GROUP ,                                     // SLUG_PAGE
-      self::SECTION_url
+      self::SECTION_URL
     );
   }
 
