@@ -69,10 +69,10 @@
 
 <?php if(checked(1, get_option('hidden_info_takeawaypage'), false)){ ?>
   <section class="info-page container" style="padding-top:5%">
-    <h1 style="letter-spacing:.1em;">
+    <h1>
       <?php echo get_option('title_info_takeawaypage'); ?>
     </h1>
-    <p class="flip flip-large">
+    <p class="flip flip-xlarge">
       <span class="deg1"></span>
       <span class="deg2"></span>
       <span class="deg3"></span>
@@ -82,10 +82,10 @@
   <section class="info-page container">
     <div class="row">
       <div class="col-md-8 col-12">
-        <h1 style="letter-spacing:.1em;">
+        <h1>
           <?php echo get_option('title_info_takeawaypage'); ?>
         </h1>
-        <p class="flip flip-large">
+        <p class="flip flip-xlarge">
           <span class="deg1"></span>
           <span class="deg2"></span>
           <span class="deg3"></span>

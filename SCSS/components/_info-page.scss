@@ -84,6 +84,18 @@
       margin: 0 auto;
     }
 
+    &-xlarge{
+      &::after{
+        left: -200px;
+        width: 100px;
+      }
+
+      &::before{
+        left: 200px;
+        width: 100px;
+      }
+    }
+
     &-large{
       &::after{
         left: -190px;
@@ -94,7 +106,18 @@
         left: 190px;
         width: 90px;
       }
+    }
 
+    &-medium{
+      &::after{
+        left: -180px;
+        width: 80px;
+      }
+
+      &::before{
+        left: 180px;
+        width: 80px;
+      }
     }
   }
 

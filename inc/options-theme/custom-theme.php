@@ -139,7 +139,7 @@ class tablebouddha_customtheme{
               Page emportés
             </span>
             <span class="importer-action">
-              <a href="" class="install-now">
+              <a href="?page=custom_takeawaypage" class="install-now">
                 Gérer la page
               </a>
             </span>
@@ -157,7 +157,7 @@ class tablebouddha_customtheme{
               Page événements
             </span>
             <span class="importer-action">
-              <a href="" class="install-now">
+              <a href="?page=custom_eventpage" class="install-now">
                 Gérer la page
               </a>
             </span>

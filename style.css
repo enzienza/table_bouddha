@@ -5932,6 +5932,16 @@ body {
   margin: 0 auto;
 }
 
+.info-page .flip-xlarge::after {
+  left: -200px;
+  width: 100px;
+}
+
+.info-page .flip-xlarge::before {
+  left: 200px;
+  width: 100px;
+}
+
 .info-page .flip-large::after {
   left: -190px;
   width: 90px;
@@ -5940,6 +5950,16 @@ body {
 .info-page .flip-large::before {
   left: 190px;
   width: 90px;
+}
+
+.info-page .flip-medium::after {
+  left: -180px;
+  width: 80px;
+}
+
+.info-page .flip-medium::before {
+  left: 180px;
+  width: 80px;
 }
 
 .info-page .info-text {
