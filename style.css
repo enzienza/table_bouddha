@@ -5932,6 +5932,16 @@ body {
   margin: 0 auto;
 }
 
+.info-page .flip-large::after {
+  left: -190px;
+  width: 90px;
+}
+
+.info-page .flip-large::before {
+  left: 190px;
+  width: 90px;
+}
+
 .info-page .info-text {
   padding: 3em;
 }

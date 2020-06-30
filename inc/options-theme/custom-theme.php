@@ -77,9 +77,8 @@ class tablebouddha_customtheme{
       </div>
 
 
-
-
       <table class="widefat importers striped">
+
         <tr class="importer-item">
           <td class="import-system">
             <span class="importer-title">
@@ -116,17 +115,79 @@ class tablebouddha_customtheme{
           </td>
         </tr>
 
+        <tr class="importer-item">
+          <td class="import-system">
+            <span class="importer-title">
+              Page boissons
+            </span>
+            <span class="importer-action">
+              <a href="?page=custom_drinkpage" class="install-now">
+                Gérer la page
+              </a>
+            </span>
+          </td>
+          <td class="desc">
+            <span class="importer-desc">
+              Lien pour gérer l'affichage de la page des boissons
+            </span>
+          </td>
+        </tr>
+
+        <tr class="importer-item">
+          <td class="import-system">
+            <span class="importer-title">
+              Page emportés
+            </span>
+            <span class="importer-action">
+              <a href="" class="install-now">
+                Gérer la page
+              </a>
+            </span>
+          </td>
+          <td class="desc">
+            <span class="importer-desc">
+              Lien pour gérer l'affichage de la page des emportés
+            </span>
+          </td>
+        </tr>
+
+        <tr class="importer-item">
+          <td class="import-system">
+            <span class="importer-title">
+              Page événements
+            </span>
+            <span class="importer-action">
+              <a href="" class="install-now">
+                Gérer la page
+              </a>
+            </span>
+          </td>
+          <td class="desc">
+            <span class="importer-desc">
+              Lien pour gérer l'affichage de la page des événements
+            </span>
+          </td>
+        </tr>
+
+        <tr class="importer-item">
+          <td class="import-system">
+            <span class="importer-title">
+              Page erreur
+            </span>
+            <span class="importer-action">
+              <a href="" class="install-now">
+                Gérer la page
+              </a>
+            </span>
+          </td>
+          <td class="desc">
+            <span class="importer-desc">
+              Lien pour gérer l'affichage de la page d'erreur
+            </span>
+          </td>
+        </tr>
+
       </table>
-
-
-      <!-- <form class="form-generality" action="options.php" method="post" enctype="multipart/form-data">
-        <?php
-          // wp_nonce_field(self::NONCE, self::NONCE);
-          // settings_fields(self::GROUP);
-          // do_settings_sections(self::GROUP);
-        ?>
-        <?php //submit_button(); ?>
-      </form> -->
     <?php
   }
 

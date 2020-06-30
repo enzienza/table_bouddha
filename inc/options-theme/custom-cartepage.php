@@ -26,8 +26,8 @@ class tablebouddha_custom_cartepage{
   /**
    * 1 - DEFINIR LES ELEMENTS (repeter)
    */
-  const SUB2_TITLE   = 'Page carte';
-  const SUB2_MENU    = 'Page carte';
+  const SUB2_TITLE   = 'Page cartes';
+  const SUB2_MENU    = 'Page cartes';
   const PERMITION    = 'manage_options';
   const SUB2_GROUP   = 'custom_cartepage';
   const NONCE        = '_custom_cartepage';
