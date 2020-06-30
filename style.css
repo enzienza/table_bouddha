@@ -5844,6 +5844,153 @@ body {
   margin-left: 0;
 }
 
+.info-page {
+  padding-top: 10%;
+}
+
+.info-page h1 {
+  font-family: "philosopher";
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 5px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.info-page .flip {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.info-page .flip::after {
+  position: absolute;
+  bottom: 4px;
+  left: -170px;
+  right: 0;
+  content: '';
+  width: 70px;
+  height: 1px;
+  background: #A16500;
+  margin: 0 auto;
+}
+
+.info-page .flip::before {
+  position: absolute;
+  bottom: 4px;
+  left: 170px;
+  right: 0;
+  content: '';
+  width: 70px;
+  height: 1px;
+  background: #A16500;
+  margin: 0 auto;
+}
+
+.info-page .flip .deg1 {
+  position: absolute;
+  bottom: 2px;
+  left: -45px;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  content: '';
+  background: #FFBD4E;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin: 0 auto;
+}
+
+.info-page .flip .deg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: #FFBD4E;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin: 0 auto;
+}
+
+.info-page .flip .deg3 {
+  position: absolute;
+  bottom: 2px;
+  left: 45px;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  content: '';
+  background: #FFBD4E;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin: 0 auto;
+}
+
+.info-page .info-text {
+  padding: 3em;
+}
+
+.info-page .img-info::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 75%;
+  height: 100%;
+  border: 1px solid #A16500;
+  border-radius: 5px;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.info-page .img-info img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.revervation {
+  color: #F5A623;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.revervation ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.revervation .icons {
+  font-size: 5.5em;
+  margin-right: 1em;
+}
+
+.revervation .booking {
+  font-family: "philosopher";
+  text-align: center;
+}
+
+.revervation .booking-text {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.revervation .booking-phone {
+  text-align: center;
+  font-size: 2em;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
+}
+
 .table-horaire {
   font-size: smaller;
   width: 75%;
@@ -5924,18 +6071,18 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 90vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
 }
 
 .hero .jumbtitle {
   text-align: center;
   font-family: "philosopher";
   color: #FAFAFA;
+  padding-top: 10%;
 }
 
 .hero .jumbtitle .logo {
@@ -5944,11 +6091,28 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 11em;
 }
 
 .hero .jumbtitle h1 {
   font-size: 5em;
+}
+
+.hero .jumb-message {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.hero .jumb-message .msg-title {
+  font-size: 3em;
+  line-height: 2;
+  letter-spacing: 5px;
+  font-family: "philosopher";
+}
+
+.hero .jumb-message .msg-text {
+  line-height: 2;
+  font-size: 1em;
+  margin: auto 4em;
 }
 
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {

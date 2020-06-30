@@ -46,6 +46,10 @@ tablebouddha_customtheme::register();
 require_once('inc/options-theme/custom-homepage.php');
 tablebouddha_custom_homepage::register();
 
+require_once('inc/options-theme/custom-cartepage.php');
+tablebouddha_custom_cartepage::register();
+
+
 
 /**
  * 3 - Post-Type

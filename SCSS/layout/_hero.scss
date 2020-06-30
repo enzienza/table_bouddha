@@ -1,18 +1,18 @@
 // main: ../style.scss
 
 .hero{
-  height: 100vh;
+  height: 90vh;
 
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
 
   .jumbtitle{
     text-align: center;
     font-family: $font-secondary;
     color: $color-light;
+    padding-top: 10%;
 
     .logo{
       width: 14em;
@@ -20,11 +20,26 @@
       -webkit-box-align:center;
       -ms-flex-align:center;
       align-items:center;
-      padding-top: 11em;
     }
 
     h1{
       font-size: 5em;
+    }
+  }
+
+  .jumb-message{
+    text-align: center;
+    padding-top: 20%;
+    .msg-title{
+      font-size: 3em;
+      line-height: 2;
+      letter-spacing: 5px;
+      font-family: $font-secondary;
+    }
+    .msg-text{
+      line-height: 2;
+      font-size: 1em;
+      margin: auto 4em;
     }
   }
 

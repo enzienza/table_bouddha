@@ -104,7 +104,7 @@ class tablebouddha_customtheme{
               Page cartes
             </span>
             <span class="importer-action">
-              <a href="#" class="install-now">
+              <a href="?page=custom_cartepage" class="install-now">
                 Gérer la page
               </a>
             </span>

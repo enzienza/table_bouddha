@@ -244,7 +244,7 @@ class tablebouddha_custom_homepage{
                <?php checked(1, $yes_video, true); ?>
         />
         <span class="info">
-          Ajouter la vidéo comme image d'arrière plan
+          Ajouter la vidéo comme d'arrière plan
         </span>
       </p>
       <p>
@@ -300,7 +300,7 @@ class tablebouddha_custom_homepage{
                value="1"
                <?php checked(1, $view_namesite_video, true); ?>
         />
-        <span>Ajouter le nom de site</span>
+        <span>Ajouter le nom du site</span>
       </p>
       <p>
         <input type="checkbox"
@@ -361,7 +361,7 @@ class tablebouddha_custom_homepage{
                <?php checked(1, $yes_image, true); ?>
         />
         <span class="info">
-          Ajouter l'image comme image d'arrière plan
+          Ajouter l'image comme d'arrière plan
         </span>
       </p>
       <p class="height-space">
@@ -405,7 +405,7 @@ class tablebouddha_custom_homepage{
                value="1"
                <?php checked(1, $view_namesite_image, true); ?>
         />
-        <span>Ajouter le nom de site</span>
+        <span>Ajouter le nom du site</span>
       </p>
       <p>
         <input type="checkbox"
