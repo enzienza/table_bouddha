@@ -52,6 +52,10 @@ tablebouddha_custom_cartepage::register();
 require_once('inc/options-theme/custom-drinkpage.php');
 tablebouddha_custom_drinkpage::register();
 
+require_once('inc/options-theme/custom-takeawaypage.php');
+tablebouddha_custom_takeawaypage::register();
+
+
 /**
  * 3 - Post-Type
  * Directory about Custom Post Types created for theme
