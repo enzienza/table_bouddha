@@ -175,7 +175,7 @@ class tablebouddha_customtheme{
               Page erreur
             </span>
             <span class="importer-action">
-              <a href="" class="install-now">
+              <a href="?page=custom_errorpage" class="install-now">
                 Gérer la page
               </a>
             </span>

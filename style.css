@@ -6390,3 +6390,67 @@ footer a:hover {
   height: 100vh;
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
 }
+
+.error {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3%;
+}
+
+.error-code {
+  bottom: 60%;
+  color: #2d353c;
+  font-size: 7em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: "philosopher";
+}
+
+.error .text-hightlight {
+  font-family: "philosopher";
+  font-weight: normal;
+}
+
+.error-desc {
+  font-size: 12px;
+  color: #919191;
+}
+
+.error-desc p {
+  margin: 2% 15% 5%;
+}
+
+.error a {
+  margin-top: 1em;
+  color: #F5A623;
+  border: 1px solid #F5A623;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.error a:hover {
+  background-color: #FFBD4E;
+  color: #212529;
+}
+
+.error-emoji {
+  font-size: 5em;
+}
+
+.error .txt-large {
+  font-size: 3em;
+  font-family: "philosopher";
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.error .txt-normal {
+  margin-bottom: 3em;
+  font-family: "poppins-light";
+  letter-spacing: 2px;
+}
+
+.error .txt-small {
+  font-size: 70%;
+  letter-spacing: 3px;
+}

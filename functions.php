@@ -58,6 +58,9 @@ tablebouddha_custom_takeawaypage::register();
 require_once('inc/options-theme/custom-eventpage.php');
 tablebouddha_custom_eventpage::register();
 
+require_once('inc/options-theme/custom-errorpage.php');
+tablebouddha_custom_errorpage::register();
+
 /**
  * 3 - Post-Type
  * Directory about Custom Post Types created for theme
