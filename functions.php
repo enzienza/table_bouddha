@@ -78,6 +78,8 @@ require_once('inc/post-type/emporters.php');
 require_once('inc/metaboxes/flaticons.php');
 MB_use_faticons::register();
 
+// require_once('inc/metaboxes/new.php');
+// MB_test_dynamique::register();
 
 /**
  * 5 - Taxonomys

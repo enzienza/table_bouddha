@@ -46,10 +46,10 @@
    $supports = array(
      'title',           // titre
      'editor',          // editeur
-     //'thumbnail',     // image à la une
-     // 'author',       // auteur du post
-     // 'excerpt',      // extrait
-     // 'comments'      // commentaires autorisé
+     //'thumbnail',        // image à la une
+     // 'author',          // auteur du post
+     // 'excerpt',         // extrait
+     // 'comments'         // commentaires autorisé
    );
 
    /**
@@ -61,7 +61,8 @@
      'public'              => true,
      'hierarchical'        => false,
      'has_archive'         => true,
-     'show_in_rest'        => true,
+     'show_in_rest'        => true,             // editeur Gutemberg
+     // 'show_in_rest'        => false,            // editeur Gutemberg
      'show_in_menu'        => true,
      'query_var'           => true,
      'menu_position'       => 4,

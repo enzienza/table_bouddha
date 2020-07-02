@@ -82,8 +82,49 @@ h1 a{
  }
 
 
+/* .post-type-cartes .editor-block-list__layout.block-editor-block-list__layout{
+  display: none;
+}
+
+.post-type-cartes .edit-post-visual-editor.editor-styles-wrapper{
+  height: 100%;
+  max-height: 200px;
+} */
+
+
 /* ----------------------------------------------
- * 2 - style for ALL administatrion
+ *  - style for metabox reapeatable
+ */
+
+ /* .button.remove-row{
+     padding: 0 15px;
+     border-radius: 15px;
+     font-size: large;
+     border-radius: 30%;
+     background: none;
+     border: 1px solid #7e8993;
+     color: #7e8993;
+ }
+
+
+ .button.remove-row:hover{
+     background: red;
+     color: #fff;
+ }
+
+ .button.add-row:hover{
+     background: green;
+     color: #fff;
+ }
+
+ .button.btn-save.button-large:hover{
+     background: #008ec2;
+     border-color: #006799;
+     color: #fff;
+ } */
+
+/* ----------------------------------------------
+ *  - style for ALL administatrion
  */
  input[type="color"],
  input[type="date"],
@@ -133,7 +174,7 @@ form h2{
   height: auto;
 }
 /* ----------------------------------------------
- * 3 - style for the generality page
+ *  - style for the generality page
  */
 
 
@@ -148,7 +189,7 @@ form h2{
 
 
 /* ----------------------------------------------
- * 4 - Style for the timetable page
+ *  - Style for the timetable page
  */
 
 /* .form-timetable h2{
@@ -183,7 +224,7 @@ form h2{
 }
 
 /* ----------------------------------------------
- * 5 - Style for the customtheme page
+ *  - Style for the customtheme page
  */
 
 .importers{
@@ -204,7 +245,7 @@ form h2{
 }
 
 /* ----------------------------------------------
- * 6 - Style for the errorpage
+ *  - Style for the errorpage
  */
 .form-errorpage .submit {
   margin-top: 4em;

@@ -1,0 +1,110 @@
+// main: ../style.scss
+
+.nav-tabs{
+  justify-content: center;
+  border-bottom: 1px solid $color-primary-dark;
+  height: 110px;
+
+  .nav-item{
+    width: 6em;
+    text-align: center;
+
+  .nav-link.active,
+  .nav-item.show{
+        color: $color-primary;
+        border: none;
+        border-bottom: 3px solid $color-primary;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        height: 100%;
+        background-color: inherit;
+      }
+
+    .nav-link{
+      &:hover{
+        color: $color-primary-light;
+        border: none;
+        border-bottom: 3px solid $color-primary-light;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        height: 100%;
+      }
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+
+    .item-icons{
+      padding-top: 1em;
+    }
+
+    .icons{
+      font-size: 2em;
+      font-weight: light;
+    }
+
+    .item-name{
+      font-size: 75%;
+      font-family: $font-secondary;
+      line-height: 15px;
+    }
+  }
+}
+
+.tab-content{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  .show{
+    padding: 1em 0;
+  }
+
+  & > .active{
+    display: block;
+    width: 80%;
+  }
+  .tab-pane{
+    h2{
+      padding-top: 1em;
+      padding-bottom: 0.5em;
+      font-size: larger;
+      line-height: 2;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+
+    table{
+      padding-bottom: 1.5em;
+
+      tr{
+        border-bottom: 1px solid $color-grey-light;
+        line-height: 3;
+        &:last-child{
+          border: none;
+        }
+      }
+
+      td{
+        padding: 0;
+        border: none;
+        border-collapse: collapse;
+
+        &:first-child{
+          text-align: center;
+          padding-left: .5em;
+        }
+
+        &:last-child{
+          text-align: right;
+          padding-right: 2em;
+        }
+      }
+    }
+
+    p{
+      line-height: 2;
+      padding-top: 1em;
+      text-align: center;
+    }
+  }
+}
