@@ -96,29 +96,41 @@
   </section>
 <?php } ?>
 
+
+<?php
+  /**
+   * Filtre / tabs
+   */
+?>
 <div class="container my-5">
 
   <ul class="nav nav-tabs">
 
 
     <?php
-        // wp_reset_postdata();
-        //
-        // $args = array(
-        //     'post_type'      => 'boissons',
-        //     'posts_per_page' => -1,
-        //     'orderby'        => 'id',
-        //     'order'          => 'ASC'
-        // );
-        // $my_query = new WP_query($args);
-        // if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post();
-     ?>
-    <?php //get_template_part('parts/nav-tabs'); ?>
+        wp_reset_postdata();
 
-    <?php //endwhile; endif;  wp_reset_postdata(); ?>
+        $args = array(
+            'post_type'      => 'boissons',
+            'posts_per_page' => -1,
+            'orderby'        => 'id',
+            'order'          => 'ASC'
+        );
+        $my_query = new WP_query($args);
+        if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post();
+     ?>
+    <?php get_template_part('parts/nav-tabs'); ?>
+
+    <?php endwhile; endif;  wp_reset_postdata(); ?>
   </ul>
 
 
+
+  <?php
+    /**
+     * tab-content
+     */
+  ?>
   <!-- <div class="tab-content" id="myTabContent"> -->
   <div class="tab-content">
     <?php

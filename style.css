@@ -5513,6 +5513,21 @@ body {
   font-style: normal;
 }
 
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
 .flaticon-meal:before {
   content: "\f100";
 }
@@ -5533,180 +5548,192 @@ body {
   content: "\f104";
 }
 
-.flaticon-lunch-box:before {
+.flaticon-sardine:before {
   content: "\f105";
 }
 
-.flaticon-beef-steak:before {
+.flaticon-preparation:before {
   content: "\f106";
 }
 
-.flaticon-sardine:before {
+.flaticon-ice-cream:before {
   content: "\f107";
 }
 
-.flaticon-preparation:before {
+.flaticon-muffin:before {
   content: "\f108";
 }
 
-.flaticon-ice-cream:before {
+.flaticon-food-and-restaurant:before {
   content: "\f109";
 }
 
-.flaticon-muffin:before {
+.flaticon-food-and-restaurant-1:before {
   content: "\f10a";
 }
 
-.flaticon-food-and-restaurant:before {
+.flaticon-cutlery:before {
   content: "\f10b";
 }
 
-.flaticon-food-and-restaurant-1:before {
+.flaticon-cake-slice:before {
   content: "\f10c";
 }
 
-.flaticon-cutlery:before {
+.flaticon-chef-hat:before {
   content: "\f10d";
 }
 
-.flaticon-cake-slice:before {
+.flaticon-food-and-restaurant-2:before {
   content: "\f10e";
 }
 
-.flaticon-chef-hat:before {
+.flaticon-food-and-restaurant-3:before {
   content: "\f10f";
 }
 
-.flaticon-food-and-restaurant-2:before {
+.flaticon-credit-card:before {
   content: "\f110";
 }
 
-.flaticon-food-and-restaurant-3:before {
+.flaticon-meat:before {
   content: "\f111";
 }
 
-.flaticon-credit-card:before {
+.flaticon-steak:before {
   content: "\f112";
 }
 
-.flaticon-meat:before {
+.flaticon-meat-1:before {
   content: "\f113";
 }
 
-.flaticon-steak:before {
+.flaticon-dimsum:before {
   content: "\f114";
 }
 
-.flaticon-meat-1:before {
+.flaticon-fish:before {
   content: "\f115";
 }
 
-.flaticon-dimsum:before {
+.flaticon-lobster:before {
   content: "\f116";
 }
 
-.flaticon-fish:before {
+.flaticon-menu:before {
   content: "\f117";
 }
 
-.flaticon-lobster:before {
+.flaticon-plate:before {
   content: "\f118";
 }
 
-.flaticon-menu:before {
+.flaticon-soda:before {
   content: "\f119";
 }
 
-.flaticon-plate:before {
+.flaticon-cocktail:before {
   content: "\f11a";
 }
 
-.flaticon-soda:before {
+.flaticon-address:before {
   content: "\f11b";
 }
 
-.flaticon-cocktail:before {
+.flaticon-headphones:before {
   content: "\f11c";
 }
 
-.flaticon-address:before {
+.flaticon-reservation:before {
   content: "\f11d";
 }
 
-.flaticon-headphones:before {
+.flaticon-reserved:before {
   content: "\f11e";
 }
 
-.flaticon-reservation:before {
+.flaticon-wine:before {
   content: "\f11f";
 }
 
-.flaticon-reserved:before {
+.flaticon-open:before {
   content: "\f120";
 }
 
-.flaticon-wine:before {
+.flaticon-credit-card-1:before {
   content: "\f121";
 }
 
-.flaticon-open:before {
+.flaticon-reserved-1:before {
   content: "\f122";
 }
 
-.flaticon-credit-card-1:before {
+.flaticon-menu-1:before {
   content: "\f123";
 }
 
-.flaticon-reserved-1:before {
+.flaticon-dish:before {
   content: "\f124";
 }
 
-.flaticon-menu-1:before {
+.flaticon-facebook:before {
   content: "\f125";
 }
 
-.flaticon-dish:before {
+.flaticon-instagram:before {
   content: "\f126";
 }
 
-.flaticon-facebook:before {
+.flaticon-null:before {
   content: "\f127";
 }
 
-.flaticon-instagram:before {
+.flaticon-localization:before {
   content: "\f128";
 }
 
-.flaticon-null:before {
+.flaticon-phone:before {
   content: "\f129";
 }
 
-.flaticon-localization:before {
+.flaticon-up-arrow:before {
   content: "\f12a";
 }
 
-.flaticon-phone:before {
+.flaticon-up:before {
   content: "\f12b";
 }
 
-.flaticon-upwards-arrow:before {
+.flaticon-twitter:before {
   content: "\f12c";
 }
 
-.flaticon-up-arrow:before {
+.flaticon-salad:before {
   content: "\f12d";
 }
 
-.flaticon-up:before {
+.flaticon-noodles:before {
   content: "\f12e";
 }
 
-.flaticon-up-arrow-1:before {
+.flaticon-box:before {
   content: "\f12f";
 }
 
-.flaticon-twitter:before {
+.flaticon-beer:before {
   content: "\f130";
+}
+
+.flaticon-champagne-1:before {
+  content: "\f131";
+}
+
+.flaticon-champagne:before {
+  content: "\f132";
+}
+
+.flaticon-salad-1:before {
+  content: "\f133";
 }
 
 .navbar {
@@ -6019,6 +6046,54 @@ body {
   font-size: 2em;
   /* font-weight: bold; */
   letter-spacing: 2px;
+}
+
+.nav-tabs {
+  justify-content: center;
+  border-bottom: 1px solid #A16500;
+  height: 110px;
+}
+
+.nav-tabs .nav-item {
+  width: 6em;
+  text-align: center;
+}
+
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-item.show {
+  color: #F5A623;
+  border: none;
+  border-bottom: 3px solid #F5A623;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  background-color: inherit;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+  color: #FFBD4E;
+  border: none;
+  border-bottom: 3px solid #FFBD4E;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.nav-tabs .nav-item p {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-item .item-icons {
+  padding-top: 1em;
+}
+
+.nav-tabs .nav-item .icons {
+  font-size: 2em;
+  font-weight: light;
+}
+
+.nav-tabs .nav-item .item-name {
+  font-size: 75%;
+  font-family: "philosopher";
+  line-height: 15px;
 }
 
 .table-horaire {

@@ -15,7 +15,7 @@
     */
    $labels = array(
      'name'                => __('Boissons', 'boissons'),
-     'singular_name'        => __('Boisson', 'boissons'),
+     'singular_name'       => __('Boisson', 'boissons'),
      'menu_name'           => __('Boisson', 'boissons'),
      'name_admin_bar'      => __('Boisson', 'boissons'),
      'add_new'             => __('Ajouter', 'boissons'),
@@ -46,7 +46,7 @@
    $supports = array(
      'title',           // titre
      'editor',          // editeur
-     'thumbnail',       // image à la une
+     //'thumbnail',       // image à la une
      // 'author',       // auteur du post
      // 'excerpt',      // extrait
      // 'comments'      // commentaires autorisé

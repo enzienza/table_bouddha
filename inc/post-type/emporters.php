@@ -15,7 +15,7 @@
     */
    $labels = array(
      'name'                => __('Emporters', 'emporters'),
-     'singular_name'        => __('Emporter', 'emporters'),
+     'singular_name'       => __('Emporter', 'emporters'),
      'menu_name'           => __('Emporter', 'emporters'),
      'name_admin_bar'      => __('Emporter', 'emporters'),
      'add_new'             => __('Ajouter', 'emporters'),
@@ -46,7 +46,7 @@
    $supports = array(
      'title',           // titre
      'editor',          // editeur
-     'thumbnail',       // image à la une
+     // 'thumbnail',       // image à la une
      // 'author',       // auteur du post
      // 'excerpt',      // extrait
      // 'comments'      // commentaires autorisé

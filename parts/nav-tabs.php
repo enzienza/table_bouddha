@@ -13,7 +13,7 @@
     aria-controls="<?php $title = sanitize_title(get_the_title()); echo $title;?>"
     aria-selected="true"
   >
-    <i class="icons <?php echo get_post_meta(get_the_ID(), MB_use_faticons::META_KEY, true); ?>"></i>
-    <?php the_title(); ?>
+    <p class="item-icon"><i class="icons <?php echo get_post_meta(get_the_ID(), MB_use_faticons::META_KEY, true); ?>"></i></p>
+    <p class="item-name"><?php the_title(); ?></p>
   </a>
 </li>
