@@ -27,6 +27,7 @@
 require_once('inc/customize/config.php');
 require_once('inc/customize/config-admin.php');
 require_once('inc/customize/custom-dashboard.php');
+require_once('inc/customize/custom-column.php');
 // require_once('inc/customize/column-cartes');
 
 
@@ -74,8 +75,8 @@ require_once('inc/post-type/emporters.php');
  * 4 - Metaboxes
  * Directory about metaboxes created for theme
  */
- // require_once('inc/metaboxes/nom.php');
- // MB_Nom::register();
+require_once('inc/metaboxes/flaticons.php');
+MB_use_faticons::register();
 
 
 /**

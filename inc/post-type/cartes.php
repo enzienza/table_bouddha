@@ -15,7 +15,7 @@
     */
    $labels = array(
      'name'                => __('Cartes', 'cartes'),
-     'singular_name'        => __('Carte', 'cartes'),
+     'singular_name'       => __('Carte', 'cartes'),
      'menu_name'           => __('Carte', 'cartes'),
      'name_admin_bar'      => __('Carte', 'cartes'),
      'add_new'             => __('Ajouter', 'cartes'),
@@ -46,7 +46,7 @@
    $supports = array(
      'title',           // titre
      'editor',          // editeur
-     'thumbnail',       // image à la une
+     //'thumbnail',     // image à la une
      // 'author',       // auteur du post
      // 'excerpt',      // extrait
      // 'comments'      // commentaires autorisé

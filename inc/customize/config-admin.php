@@ -104,7 +104,11 @@ add_action('admin_enqueue_scripts', function(){
     get_template_directory_uri().'/assets/css/admin.css'
   );
 
-
+  // Utilisation des icons 'flaticon' dans l'administratrion
+    wp_enqueue_style(
+      'elegant_font',
+      get_template_directory_uri().'/assets/fonts/flaticon/flaticon.css'
+    );
 
   // Utilisation des icons 'elegant' dans l'administratrion
   // wp_enqueue_style(
