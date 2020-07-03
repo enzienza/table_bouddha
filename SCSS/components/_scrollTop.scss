@@ -12,11 +12,12 @@
     height: 40px;
     right: 20px;
     bottom: 20px;
-    transition: background 0.5s;
     z-index:1000;
     border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
     opacity:0;
+
+    @include transition_scrollTop;
+    @include shadow(0 0px 10px rgba(9, 9, 9, 0.9));
 
 
     &:hover{

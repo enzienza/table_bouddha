@@ -48,10 +48,8 @@
       height: 6px;
       content: '';
       background: $color-primary-light;
-      -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-      transform: rotate(135deg);
       margin: 0 auto;
+      @include rotate(135deg);
     }
 
     .deg2{
@@ -63,10 +61,8 @@
       height: 10px;
       content: '';
       background: $color-primary-light;
-      -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-      transform: rotate(135deg);
       margin: 0 auto;
+      @include rotate(135deg);
     }
 
     .deg3{
@@ -78,10 +74,8 @@
       height: 6px;
       content: '';
       background: $color-primary-light;;
-      -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-      transform: rotate(135deg);
       margin: 0 auto;
+      @include rotate(135deg);
     }
 
     &-xlarge{

@@ -5395,6 +5395,47 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/**
+ * BOX-SIZING
+ * @type {[type]}
+ */
+/**
+ * DISPLAY : FLEX
+ */
+/**
+ * DISPLAY : FLEX
+ */
+/**
+ * JUSTIFY-CONTENT
+ *
+ * Description :
+ * La propriété justify-content définit l'alignement le long de l'axe principal.
+ * Elle permet de distribuer l'espace excédentaire lorsque tous les items flex
+ * sur une ligne sont inflexibles ou lorsqu'ils ont atteint leur taille maximale.
+ * Elle contrôle aussi l'alignement des items lorsqu'ils débordent.
+ *
+ * @type {[flex-start | flex-end | center | space-between | space-around]}
+ */
+/*
+ * ALIGN-ITEMS
+ *
+ * Description :
+ * La propriété align-items définit la façon dont les items d'une ligne sont
+ * disposés le long de l'axe "cross". On peut le voir comme la version de j
+ * ustify-content pour "cross axis".
+ *
+ * @type {[flex-start | flex-end | center | baseline | stretch]}
+ */
+/*
+ * ALIGN-CONTENT
+ *
+ * Description :
+ * La propriété align-content aligne les lignes d'un container flex à
+ * l'intérieur de l'espace où il reste de l'espace sur l'axe cross,
+ * un peu comme justify-content aligne les items sur l'axe principal.
+ *
+ * @type {(flex-start | flex-end | center | space-between | space-around | stretch)}
+ */
 /* ------------------------------------------------------------ */
 /* COLOR */
 /* ------------------------------------------------------------ */
@@ -5416,6 +5457,7 @@ $wide_width: 1379px; */
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -5424,6 +5466,7 @@ ul {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -5746,11 +5789,15 @@ body {
 
 .solid {
   background-color: #212529;
+  -webkit-transition: background-color .05s ease 0s;
+  -o-transition: background-color .05s ease 0s;
   transition: background-color .05s ease 0s;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .solid .navbar-nav .nav-link::before, .solid .navbar-nav .nav-link::after {
+  -webkit-box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
   box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
 }
 
@@ -5764,6 +5811,8 @@ body {
 }
 
 .navbar-nav .current-menu-item .nav-link::before, .navbar-nav .current-menu-item .nav-link::after {
+  -webkit-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+  -o-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
   transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
 }
 
@@ -5793,6 +5842,8 @@ body {
 .navbar-nav .nav-item .nav-link:hover::before, .navbar-nav .nav-item .nav-link:active::before {
   left: 0;
   right: 60%;
+  -webkit-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+  -o-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
   transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
 }
 
@@ -5804,6 +5855,8 @@ body {
 .navbar-nav .nav-item .nav-link:hover::after, .navbar-nav .nav-item .nav-link:active::after {
   right: 0;
   left: 60%;
+  -webkit-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
+  -o-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
   transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
 }
 
@@ -5849,11 +5902,14 @@ body {
   height: 40px;
   right: 20px;
   bottom: 20px;
-  transition: background 0.5s;
   z-index: 1000;
   border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
   opacity: 0;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+  box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
 }
 
 .scrollTop:hover {
@@ -5923,10 +5979,10 @@ body {
   height: 6px;
   content: '';
   background: #FFBD4E;
+  margin: 0 auto;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  margin: 0 auto;
 }
 
 .info-page .flip .deg2 {
@@ -5938,10 +5994,10 @@ body {
   height: 10px;
   content: '';
   background: #FFBD4E;
+  margin: 0 auto;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  margin: 0 auto;
 }
 
 .info-page .flip .deg3 {
@@ -5953,10 +6009,10 @@ body {
   height: 6px;
   content: '';
   background: #FFBD4E;
+  margin: 0 auto;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  margin: 0 auto;
 }
 
 .info-page .flip-xlarge::after {
@@ -6015,13 +6071,21 @@ body {
 
 .revervation {
   color: #F5A623;
-  display: flex;
-  justify-content: center;
   padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .revervation ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -6049,6 +6113,8 @@ body {
 }
 
 .nav-tabs {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-bottom: 1px solid #A16500;
   height: 110px;
@@ -6064,17 +6130,19 @@ body {
   color: #F5A623;
   border: none;
   border-bottom: 3px solid #F5A623;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 100%;
   background-color: inherit;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-tabs .nav-item .nav-link:hover {
   color: #FFBD4E;
   border: none;
   border-bottom: 3px solid #FFBD4E;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-tabs .nav-item p {
@@ -6097,6 +6165,7 @@ body {
 }
 
 .tab-content {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -6452,6 +6521,8 @@ footer a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
 }
 
@@ -6485,18 +6556,26 @@ footer a:hover {
 
 .info-contact {
   color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .info-contact ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  align-self: center;
   position: absolute;
   bottom: 0;
 }
 
 .info-contact .item-info-contact {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   line-height: 2;
   margin-right: 2rem;
@@ -6522,6 +6601,8 @@ footer a:hover {
 
 #bg-image .filter {
   height: 100vh;
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
 }
 

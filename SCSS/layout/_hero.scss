@@ -17,9 +17,7 @@
     .logo{
       width: 14em;
       height: auto;
-      -webkit-box-align:center;
-      -ms-flex-align:center;
-      align-items:center;
+      @include align-items(center);
     }
 
     h1{
