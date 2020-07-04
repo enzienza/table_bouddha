@@ -102,7 +102,7 @@
    * Filtre / tabs
    */
 ?>
-<div class="container my-5">
+<section class="container my-5">
 
   <ul class="nav nav-tabs">
 
@@ -150,7 +150,7 @@
   </div><!-- /.tab-content -->
 
 
-</div>
+</section>
 
 
 <?php

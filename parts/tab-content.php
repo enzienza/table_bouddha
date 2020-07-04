@@ -1,4 +1,14 @@
-<?php  ?>
+<?php
+/**
+ * Loads 'nav-tabs' template-part on pages :
+ * page-cartes | page-boissons | page-emporters
+ *
+ * @package WordPress
+ * @subpackage tablebouddha
+ * @since 2.0
+ */
+?>
+
 
 
 <div

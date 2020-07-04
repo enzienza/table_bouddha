@@ -113,9 +113,25 @@
    * MAIN ==> CPT_emporter
    */
 ?>
-<div class="container my-5">
+<section class="container my-5">
+  <div class="row">
+    <?php
+      wp_reset_postdata();
 
-</div>
+      $args = array(
+          'post_type'      => 'evenements',
+          'posts_per_page' => -1,
+          'orderby'        => 'id',
+          'order'          => 'ASC'
+      );
+      $my_query = new WP_query($args);
+      if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post();
+    ?>
+      <?php get_template_part('parts/cards'); ?>
+    <?php endwhile; endif;  wp_reset_postdata(); ?>
+  </div>
+</section>
+
 
 
 <?php
