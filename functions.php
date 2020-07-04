@@ -28,8 +28,6 @@ require_once('inc/customize/config.php');
 require_once('inc/customize/config-admin.php');
 require_once('inc/customize/custom-dashboard.php');
 require_once('inc/customize/custom-column.php');
-// require_once('inc/customize/column-cartes');
-
 
 /**
  * 2 - Options-Theme
@@ -69,7 +67,7 @@ tablebouddha_custom_errorpage::register();
 require_once('inc/post-type/cartes.php');
 require_once('inc/post-type/boissons.php');
 require_once('inc/post-type/emporters.php');
-
+require_once('inc/post-type/evenements.php');
 
 /**
  * 4 - Metaboxes
@@ -78,8 +76,9 @@ require_once('inc/post-type/emporters.php');
 require_once('inc/metaboxes/flaticons.php');
 MB_use_faticons::register();
 
-// require_once('inc/metaboxes/new.php');
-// MB_test_dynamique::register();
+require_once('inc/metaboxes/info-event.php');
+MB_info_event::register();
+
 
 /**
  * 5 - Taxonomys

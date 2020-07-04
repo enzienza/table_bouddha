@@ -5767,16 +5767,32 @@ body {
   content: "\f130";
 }
 
-.flaticon-champagne-1:before {
+.flaticon-champagne:before {
   content: "\f131";
 }
 
-.flaticon-champagne:before {
+.flaticon-champagne-1:before {
   content: "\f132";
 }
 
 .flaticon-salad-1:before {
   content: "\f133";
+}
+
+.flaticon-clock:before {
+  content: "\f134";
+}
+
+.flaticon-calendar:before {
+  content: "\f135";
+}
+
+.flaticon-calendar-1:before {
+  content: "\f136";
+}
+
+.flaticon-time:before {
+  content: "\f137";
 }
 
 .navbar {
@@ -6668,4 +6684,86 @@ footer a:hover {
 .error .txt-small {
   font-size: 70%;
   letter-spacing: 3px;
+}
+
+.big-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20%;
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-family: "philosopher";
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.block-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.block-info .item-info-event {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  /* line-height: 2; */
+  margin-right: 2em;
+}
+
+.block-info .icons {
+  font-size: 1em;
+  margin-right: 15px;
+}
+
+.block-info p {
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.single-event img {
+  -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+  box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+}
+
+.card-event {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-event:hover {
+  -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+  box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+}
+
+.card-event .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: .5em;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+}
+
+.card-event img {
+  width: 100%;
+  max-height: 180px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-event .item-info-event {
+  font-size: 65%;
+  /* margin-right: 5px; */
 }

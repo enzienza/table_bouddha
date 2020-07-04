@@ -131,3 +131,51 @@
    10,
    2
  );
+
+
+ /**
+  * 4 - ADMIN POST-TYPE : EVENT
+  */
+  /* Etape 1 : ajouter les colonnes */
+   add_filter(
+     'manage_evenements_posts_columns',
+     function($columns){
+       // var_dump($columns);
+       return[
+         'cb'          => '<input type="checkbox" />',
+         'title'       => $columns['title'],
+         'date_event'  => 'Date de l\'événement',
+         'heure_event' => 'Heure de l\'événement',
+         'date'        => $columns['date']
+       ];
+     }
+   );
+
+  /* Etape 2 : afficher le contenu souhaiter */
+  add_filter(
+    'manage_evenements_posts_custom_column',
+    function($column, $postId){
+      if($column === 'date_event'){
+        if(!empty(get_post_meta($postId, 'date_event',true))){ ?>
+          <p>
+            <?php
+              $date = get_post_meta(get_the_ID(), 'date_event', true);
+              if($date != ''){echo date_i18n("j M Y", strtotime($date));}
+            ?>
+          </p>
+        <?php } else { ?>
+        <?php }
+      }
+
+      if($column === 'heure_event'){
+        if(!empty(get_post_meta($postId, 'heure_event',true))){ ?>
+          <p>
+            <?php echo get_post_meta(get_the_ID(), 'heure_event', true); ?>
+          </p>
+        <?php } else { ?>
+        <?php }
+      }
+    },
+    10,
+    2
+  );
