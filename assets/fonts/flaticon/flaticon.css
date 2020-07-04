@@ -1,6 +1,6 @@
 /*
 Flaticon icon font: Flaticon
-Creation date: 02/07/2020 11:13
+Creation date: 03/07/2020 22:51
 */
 
 @font-face {
@@ -79,6 +79,10 @@ Creation date: 02/07/2020 11:13
 .flaticon-noodles:before { content: "\f12e"; }
 .flaticon-box:before { content: "\f12f"; }
 .flaticon-beer:before { content: "\f130"; }
-.flaticon-champagne-1:before { content: "\f131"; }
-.flaticon-champagne:before { content: "\f132"; }
+.flaticon-champagne:before { content: "\f131"; }
+.flaticon-champagne-1:before { content: "\f132"; }
 .flaticon-salad-1:before { content: "\f133"; }
+.flaticon-clock:before { content: "\f134"; }
+.flaticon-calendar:before { content: "\f135"; }
+.flaticon-calendar-1:before { content: "\f136"; }
+.flaticon-time:before { content: "\f137"; }

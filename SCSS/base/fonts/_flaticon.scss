@@ -27,7 +27,6 @@
   //margin-left: 20px;
 }
 
-
 .fi:before{
   display: inline-block;
   font-family: "Flaticon";
@@ -92,9 +91,13 @@
 .flaticon-noodles:before { content: "\f12e"; }
 .flaticon-box:before { content: "\f12f"; }
 .flaticon-beer:before { content: "\f130"; }
-.flaticon-champagne-1:before { content: "\f131"; }
-.flaticon-champagne:before { content: "\f132"; }
+.flaticon-champagne:before { content: "\f131"; }
+.flaticon-champagne-1:before { content: "\f132"; }
 .flaticon-salad-1:before { content: "\f133"; }
+.flaticon-clock:before { content: "\f134"; }
+.flaticon-calendar:before { content: "\f135"; }
+.flaticon-calendar-1:before { content: "\f136"; }
+.flaticon-time:before { content: "\f137"; }
 
 $font-Flaticon-meal: "\f100";
 $font-Flaticon-take-away: "\f101";
@@ -145,6 +148,10 @@ $font-Flaticon-salad: "\f12d";
 $font-Flaticon-noodles: "\f12e";
 $font-Flaticon-box: "\f12f";
 $font-Flaticon-beer: "\f130";
-$font-Flaticon-champagne-1: "\f131";
-$font-Flaticon-champagne: "\f132";
+$font-Flaticon-champagne: "\f131";
+$font-Flaticon-champagne-1: "\f132";
 $font-Flaticon-salad-1: "\f133";
+$font-Flaticon-clock: "\f134";
+$font-Flaticon-calendar: "\f135";
+$font-Flaticon-calendar-1: "\f136";
+$font-Flaticon-time: "\f137";
