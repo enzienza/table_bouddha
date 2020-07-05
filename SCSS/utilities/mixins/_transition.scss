@@ -17,3 +17,9 @@
        -o-transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
           transition: left 0.1s ease 0s, right 0.1s ease 0.1s;
 }
+
+@mixin transition_height_card {
+  -webkit-transition: height .5s ease 0s;
+       -o-transition: height .5s ease 0s;
+          transition: height .5s ease 0s;
+}

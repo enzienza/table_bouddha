@@ -76,7 +76,7 @@
 
   .card-body{
     height: 100px;
-    transition: all 0.1s ease 0s;
+    @include transition_height_card;
   }
 
   .block-info{
@@ -98,7 +98,8 @@
     padding: .5em;
     overflow: hidden;
     opacity: 0;
-    /* transition: all 0.3s ease-in-out 0s; */
+    text-shadow: 4px 2px 4px rgba(9,9,9,0.9);
+    
     &::before, &::after{
       display: block;
       clear: both;

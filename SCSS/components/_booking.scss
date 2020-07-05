@@ -5,6 +5,7 @@
   padding: 1em 0;
   @include flex;
   @include justify-content(center);
+  text-shadow: 4px 2px 4px rgba(9,9,9,0.9);
 
   ul{
     @include inline-flex;

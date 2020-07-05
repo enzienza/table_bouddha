@@ -5449,6 +5449,30 @@ a.text-dark:hover, a.text-dark:focus {
 $tablet_width: 768px;
 $desktop_width: 1168px;
 $wide_width: 1379px; */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated .infinite {
+  animation-iteration-count: infinites;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6094,6 +6118,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
 }
 
 .revervation ul {
@@ -6133,6 +6158,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   border-bottom: 1px solid #A16500;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
   height: 110px;
 }
 
@@ -6238,6 +6264,7 @@ body {
   line-height: 2;
   padding-top: 1em;
   text-align: center;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
 }
 
 .table-horaire {
@@ -6781,7 +6808,9 @@ footer a:hover {
 
 .card-event .card-body {
   height: 100px;
-  transition: all 0.1s ease 0s;
+  -webkit-transition: height .5s ease 0s;
+  -o-transition: height .5s ease 0s;
+  transition: height .5s ease 0s;
 }
 
 .card-event .block-info {
@@ -6803,7 +6832,7 @@ footer a:hover {
   padding: .5em;
   overflow: hidden;
   opacity: 0;
-  /* transition: all 0.3s ease-in-out 0s; */
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
 }
 
 .card-event .btn::before, .card-event .btn::after {
