@@ -79,6 +79,8 @@ MB_use_faticons::register();
 require_once('inc/metaboxes/info-event.php');
 MB_info_event::register();
 
+require_once('inc/metaboxes/view_section.php');
+MB_view_section::register();
 
 /**
  * 5 - Taxonomys

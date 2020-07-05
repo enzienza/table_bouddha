@@ -46,25 +46,29 @@
 	</div>
 </section>
 
-<section class="revervation">
-	<ul>
-		<?php if(checked(1, get_option('view_icon_drinkpage'), false)){ ?>
-			<li>
-				<span class="icons flaticon-reservation"></span>
-			</li>
-		<?php } ?>
-		<li class="booking">
-			<p class="booking-text">
-				<?php echo get_option('texte_booking_drinkpage'); ?>
-			</p>
-			<?php if(checked(1, get_option('view_phone_drinkpage'), false)){ ?>
-				<p class="booking-phone">
-					<?php echo get_option('phone'); ?>
-				</p>
+
+
+<?php if(get_post_meta(get_the_ID(), MB_view_section::META_KEY, true) === '1') : ?>
+	<section class="revervation">
+		<ul>
+			<?php if(checked(1, get_option('view_icon_drinkpage'), false)){ ?>
+				<li>
+					<span class="icons flaticon-reservation"></span>
+				</li>
 			<?php } ?>
-		</li>
-	</ul>
-</section>
+			<li class="booking">
+				<p class="booking-text">
+					<?php echo get_option('texte_booking_drinkpage'); ?>
+				</p>
+				<?php if(checked(1, get_option('view_phone_drinkpage'), false)){ ?>
+					<p class="booking-phone">
+						<?php echo get_option('phone'); ?>
+					</p>
+				<?php } ?>
+			</li>
+		</ul>
+	</section>
+<?php endif ?>
 
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

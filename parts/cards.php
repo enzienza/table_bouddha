@@ -38,6 +38,9 @@
     				</p>
     			</li>
     		</ul>
+        <p class="btn">
+          Voir detail
+        </p>
       </div>
     </div>
   </a>

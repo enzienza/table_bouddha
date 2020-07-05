@@ -6715,17 +6715,17 @@ footer a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /* line-height: 2; */
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 .block-info .icons {
   font-size: 1em;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .block-info p {
   font-size: 1em;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .single-event img {
@@ -6734,6 +6734,7 @@ footer a:hover {
 }
 
 .card-event {
+  height: 300px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -6742,6 +6743,21 @@ footer a:hover {
 .card-event:hover {
   -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
   box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+}
+
+.card-event:hover .btn {
+  opacity: 1;
+}
+
+.card-event:hover .card-body {
+  height: 120px;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  left: 15px;
+  z-index: 2;
+  text-align: center;
+  background: #212529;
 }
 
 .card-event .card-title {
@@ -6763,7 +6779,37 @@ footer a:hover {
   border-top-right-radius: 5px;
 }
 
+.card-event .card-body {
+  height: 100px;
+  transition: all 0.1s ease 0s;
+}
+
+.card-event .block-info {
+  margin-bottom: .5em;
+}
+
 .card-event .item-info-event {
   font-size: 65%;
   /* margin-right: 5px; */
+}
+
+.card-event .btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F5A623;
+  color: #F5A623;
+  border-radius: 5px;
+  margin: 0 5em;
+  padding: .5em;
+  overflow: hidden;
+  opacity: 0;
+  /* transition: all 0.3s ease-in-out 0s; */
+}
+
+.card-event .btn::before, .card-event .btn::after {
+  display: block;
+  clear: both;
+  content: '';
+  width: 0;
+  height: 0;
 }
