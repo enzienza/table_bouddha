@@ -5914,6 +5914,9 @@ body {
     padding-top: 1em;
     background: rgba(8, 8, 8, 0.8);
   }
+  .solid .navbar-collapse {
+    background: none;
+  }
   .nav-item {
     text-align: center;
     padding: 1em 0;
@@ -5928,6 +5931,9 @@ body {
     padding-top: 1em;
     background: rgba(8, 8, 8, 0.8);
   }
+  .solid .navbar-collapse {
+    background: none;
+  }
   .nav-item {
     text-align: center;
     padding: 1em 0;
@@ -5941,6 +5947,9 @@ body {
   .navbar .navbar-collapse {
     padding-top: 1em;
     background: rgba(8, 8, 8, 0.8);
+  }
+  .solid .navbar-collapse {
+    background: none;
   }
   .nav-item {
     text-align: center;
@@ -6334,6 +6343,9 @@ body {
     width: 80%;
     margin-left: 3em;
   }
+  .table-horaire .close {
+    /* padding-left: calc(100% / 7); */
+  }
 }
 
 .title-page {
@@ -6500,6 +6512,7 @@ body {
 
 .footer-info .blog-address {
   margin-left: 3em;
+  font-family: "poppins-light";
 }
 
 .footer-info .blog-address .icons {
@@ -6516,6 +6529,8 @@ body {
 
 .footer-info .title {
   font-size: x-large;
+  font-family: "philosopher";
+  font-weight: bold;
 }
 
 .footer-info .navbar-nav {
@@ -6581,7 +6596,8 @@ footer a:hover {
   footer {
     border-top: 0.1em solid #919191;
     font-size: .7em;
-    line-height: 3;
+    line-height: 1.5;
+    padding: 1em 7em;
   }
   .footer-info {
     padding: 2em 0;
@@ -6597,6 +6613,10 @@ footer a:hover {
   }
   .footer-info .blog-address {
     margin-left: 5em;
+  }
+  .footer-info .blog-address p {
+    font-size: calc(1em / 1.2);
+    line-height: 1;
   }
   .footer-info .navbar-nav {
     margin-left: 1em;

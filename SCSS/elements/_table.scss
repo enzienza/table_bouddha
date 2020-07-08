@@ -52,5 +52,8 @@
   .table-horaire{
     width: 80%;
     margin-left: 3em;
+    .close{
+      /* padding-left: calc(100% / 7); */
+    }
   }
 }

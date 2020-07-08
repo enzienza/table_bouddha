@@ -98,6 +98,11 @@
       background: rgba(8, 8, 8, .8);
     }
   }
+  .solid{
+    .navbar-collapse{
+      background: none;
+    }
+  }
   .nav-item{
     text-align: center;
     padding: 1em 0;
@@ -112,6 +117,11 @@
       background: rgba(8, 8, 8, .8);
     }
   }
+  .solid{
+    .navbar-collapse{
+      background: none;
+    }
+  }
   .nav-item{
     text-align: center;
     padding: 1em 0;
@@ -124,6 +134,11 @@
     .navbar-collapse{
       padding-top: 1em;
       background: rgba(8, 8, 8, .8);
+    }
+  }
+  .solid{
+    .navbar-collapse{
+      background: none;
     }
   }
   .nav-item{
