@@ -5906,12 +5906,27 @@ body {
   height: 2px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+  .navbar {
+    height: auto;
+  }
+  .navbar .navbar-collapse {
+    padding-top: 1em;
+    background: rgba(8, 8, 8, 0.8);
+  }
+  .nav-item {
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
   .navbar {
     height: auto;
   }
   .navbar .navbar-collapse {
     padding-top: 1em;
+    background: rgba(8, 8, 8, 0.8);
   }
   .nav-item {
     text-align: center;
@@ -5925,6 +5940,7 @@ body {
   }
   .navbar .navbar-collapse {
     padding-top: 1em;
+    background: rgba(8, 8, 8, 0.8);
   }
   .nav-item {
     text-align: center;
@@ -6346,6 +6362,36 @@ body {
   z-index: -100;
 }
 
+@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+  #video-background {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #video-background {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  #video-background {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+}
+
 .hero {
   height: 90vh;
   background-position: 50% 50%;
@@ -6564,14 +6610,13 @@ footer a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
-  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
 }
 
 .filter .jumbtitle {
   text-align: center;
-  font-family: "philosopher";
   color: #FAFAFA;
   padding-top: 10%;
 }
@@ -6584,21 +6629,49 @@ footer a:hover {
   align-items: center;
 }
 
-.filter .jumbtitle h1 {
-  font-size: 5em;
+.filter .jumbtitle .logo-center {
+  padding-top: 4em;
 }
 
-.filter .container h1 {
+.filter .jumbtitle h1 {
+  font-size: 5em;
+  font-family: "philosopher";
+}
+
+.filter .jumbtitle .title-center {
+  padding-top: 15%;
+}
+
+.filter .message {
+  padding-top: 5%;
+}
+
+.filter .message .small {
+  padding-top: 15%;
+}
+
+.filter .message .small-logo {
+  padding-top: 10%;
+  width: 14em;
+}
+
+.filter .message .small-title {
   font-size: 2em;
 }
 
-.filter .view-message {
+.filter .message .view-message {
+  font-family: "poppins-light";
   align-self: center;
   font-size: 1.5em;
 }
 
+.filter .my-4 {
+  margin-top: 0 !important;
+}
+
 .info-contact {
   color: #FAFAFA;
+  font-family: "poppins-light";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6644,9 +6717,253 @@ footer a:hover {
 
 #bg-image .filter {
   height: 100vh;
-  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
-  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), black);
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+}
+
+@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+  #bg-video video, #bg-video ::before, #bg-video ::after {
+    background: #000;
+  }
+  #bg-video .filter .jumbtitle .logo {
+    width: calc(100% / 5);
+  }
+  #bg-video .filter .jumbtitle h1 {
+    font-size: calc(5em - 1em);
+  }
+  #bg-video .filter .jumbtitle .title-center {
+    padding-top: calc(100% / 2.5);
+  }
+  #bg-video .filter .message .small {
+    padding-top: calc(100% / 2.5) !important;
+  }
+  #bg-video .filter .message .small-md-3 {
+    padding-top: calc(100% / 4) !important;
+  }
+  #bg-video .filter .message .small-md-9 {
+    padding-top: calc(10% / 2) !important;
+  }
+  #bg-video .filter .message .view-message {
+    padding-top: 1.5em;
+  }
+  #bg-video .filter .my-4 {
+    padding-top: calc(15% * 2.5);
+  }
+  #bg-video .filter .pt-4 {
+    padding-top: calc(100% / 3) !important;
+  }
+  #bg-image .filter .jumbtitle .logo {
+    width: calc(100% / 5);
+  }
+  #bg-image .filter .jumbtitle h1 {
+    font-size: calc(5em - 1em);
+  }
+  #bg-image .filter .jumbtitle .title-center {
+    padding-top: calc(100% / 2.5);
+  }
+  #bg-image .filter .message .small-logo {
+    padding-top: calc(10% * 2);
+  }
+  #bg-image .filter .message .small-md-3 {
+    padding-top: calc(100% / 4) !important;
+  }
+  #bg-image .filter .message .small-md-9 {
+    padding-top: calc(10% / 2) !important;
+  }
+  #bg-image .filter .message .small-msg {
+    padding-top: calc(100% / 3) !important;
+  }
+  #bg-image .filter .message .view {
+    padding-top: 2em !important;
+  }
+  #bg-image .filter .message .view-message {
+    padding-top: 1em;
+    font-size: calc(1.5em - .4em);
+  }
+  #bg-image .filter .my-4 {
+    padding-top: calc(15% * 2);
+  }
+  #bg-image .filter .pt-4 {
+    padding-top: calc(100% / 4) !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #bg-video video, #bg-video ::before, #bg-video ::after {
+    background: #000;
+  }
+  #bg-video .filter {
+    height: 100vh;
+  }
+  #bg-video .filter .jumbtitle .logo {
+    width: calc(100% / 8);
+  }
+  #bg-video .filter .jumbtitle h1 {
+    font-size: calc(100% / .5);
+  }
+  #bg-video .filter .message .jumbtitle {
+    padding-top: calc(5% / 1);
+  }
+  #bg-video .filter .message .small {
+    font-size: calc(2em / 2) !important;
+    padding-top: calc(100% / 6) !important;
+  }
+  #bg-video .filter .message .small-logo {
+    padding-top: calc(1em / 2);
+    width: calc(100% / 10);
+  }
+  #bg-video .filter .message .small-title {
+    font-size: calc(2em / 1);
+  }
+  #bg-video .filter .message .small-md-3 {
+    padding-top: calc(10% / 2) !important;
+  }
+  #bg-video .filter .message .small-md-9 {
+    padding-top: calc(6% / 2) !important;
+  }
+  #bg-video .filter .message .view {
+    padding-top: calc(1em * 2) !important;
+  }
+  #bg-video .filter .message .view-message {
+    font-size: calc(2em / 2.5);
+    padding-top: calc(1em / 2);
+  }
+  #bg-video .filter .pt-4 {
+    padding-top: 3em !important;
+  }
+  #bg-image .filter .jumbtitle .logo {
+    width: calc(100% / 8);
+  }
+  #bg-image .filter .jumbtitle h1 {
+    font-size: calc(100% / .5);
+  }
+  #bg-image .filter .jumbtitle .title-center {
+    padding-top: calc(10% / 1);
+  }
+  #bg-image .filter .message .jumbtitle {
+    padding-top: calc(5% / 1);
+  }
+  #bg-image .filter .message .small {
+    font-size: calc(2em / 2) !important;
+    padding-top: calc(100% / 6) !important;
+  }
+  #bg-image .filter .message .small-logo {
+    padding-top: calc(1em / 2);
+    width: calc(100% / 10);
+  }
+  #bg-image .filter .message .small-title {
+    font-size: calc(2em / 1);
+  }
+  #bg-image .filter .message .small-md-3 {
+    padding-top: calc(15% / 2) !important;
+  }
+  #bg-image .filter .message .small-md-9 {
+    padding-top: calc(6% / 2) !important;
+  }
+  #bg-image .filter .message .view {
+    padding-top: calc(1em * 2) !important;
+  }
+  #bg-image .filter .message .view-message {
+    font-size: calc(2em / 2.5);
+    padding-top: calc(1em / 2);
+  }
+  .info-contact ul {
+    display: inline;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: .5em;
+    color: #919191;
+  }
+  .info-contact .item-info-contact {
+    line-height: 0;
+    margin: 0;
+  }
+  .info-contact .item-info-contact .icons {
+    font-size: small;
+    margin-right: 10px;
+  }
+  .info-contact .item-info-contact p {
+    font-size: small;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  #bg-video video, #bg-video ::before, #bg-video ::after {
+    background: #000;
+  }
+  #bg-video .filter {
+    height: 100vh;
+  }
+  #bg-video .filter .jumbtitle .logo {
+    width: calc(100% / 5);
+  }
+  #bg-video .filter .jumbtitle h1 {
+    font-size: calc(100% / .5);
+  }
+  #bg-video .filter .message .view-message {
+    font-size: calc(100% / 1);
+    position: fixed;
+    bottom: 7em;
+  }
+  #bg-video .filter .pt-6 {
+    padding-top: 5em;
+  }
+  #bg-image .filter .jumbtitle .logo {
+    width: calc(100% / 4);
+  }
+  #bg-image .filter .jumbtitle .logo-center {
+    width: calc(100% / 3) !important;
+  }
+  #bg-image .filter .jumbtitle h1 {
+    font-size: calc(100% / .5);
+  }
+  #bg-image .filter .jumbtitle .title-center {
+    padding-top: calc(100% / 1.5);
+  }
+  #bg-image .filter .message {
+    padding-top: calc(100% / 5);
+  }
+  #bg-image .filter .message .small-md-3 {
+    padding-top: calc(100% / 3);
+  }
+  #bg-image .filter .message .small-msg {
+    padding-top: calc(100% / 2.5) !important;
+  }
+  #bg-image .filter .message .view-message {
+    font-size: 1em;
+    padding-top: 1em;
+  }
+  #bg-image .my-4 {
+    padding-top: calc(100% / 2);
+  }
+  #bg-image .pt-4 {
+    padding-top: calc(100% / 3) !important;
+  }
+  .info-contact ul {
+    display: inline;
+    text-align: center;
+    bottom: 0;
+    left: 15px;
+    margin-bottom: .5em;
+    color: #919191;
+  }
+  .info-contact ul .invible {
+    display: none;
+  }
+  .info-contact .item-info-contact {
+    line-height: 0;
+    margin: 0;
+  }
+  .info-contact .item-info-contact .icons {
+    font-size: small;
+    margin-right: 10px;
+  }
+  .info-contact .item-info-contact p {
+    font-size: small;
+    letter-spacing: 1px;
+  }
 }
 
 .error {

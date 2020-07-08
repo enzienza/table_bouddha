@@ -33,7 +33,7 @@
 
     <div class="filter">
       <?php if(checked(1, get_option('yes_message_video'), false)){ ?>
-        <div class="container" style="padding-top:5%">
+        <div class="container message">
           <div class="row jumbtitle">
             <?php
               if(
@@ -41,33 +41,39 @@
                 (checked(1, get_option('view_namesite_video'), false))
               ){
             ?>
-              <div class="col-md-3 col-12">
-                <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>" style="padding-top:10%; width: 14em;" >
+              <div class="col-lg-3 col-12">
+                <img src="<?php echo get_option('img_logo') ?>"
+                     class="logo small-logo"
+                     alt="<?php bloginfo('title'); ?>"
+                />
                 <h1 class="small-title">
                   <?php bloginfo('title'); ?>
                 </h1>
               </div>
-              <div class="col-md-9 col-12 view-message">
+              <div class="col-lg-9 col-12 view-message">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } elseif(checked(1, get_option('view_logo_video'), false)) { ?>
-              <div class="col-md-3 col-12">
-                <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>" style="padding-top:10%; width: 14em;" >
+              <div class="col-lg-3 col-12">
+                <img src="<?php echo get_option('img_logo') ?>"
+                     class="logo small-logo"
+                     alt="<?php bloginfo('title'); ?>"
+                />
               </div>
-              <div class="col-md-9 col-12 view-message">
+              <div class="col-lg-9 col-12 view view-message">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } elseif(checked(1, get_option('view_namesite_video'), false)){ ?>
-              <div class="col-md-3 col-12" style="padding-top:15%">
+              <div class="col-lg-3 col-12  small small-md-3" style="">
                 <h1 class="small-title">
                   <?php bloginfo('title'); ?>
                 </h1>
               </div>
-              <div class="col-md-9 col-12 view-message" style="padding-top:15%">
+              <div class="col-lg-9 col-12 small small-md-9 view-message">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } else { ?>
-              <div class="col-12 view-message" style="padding-top:15%">
+              <div class="col-12 small view-message" style="">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } ?>
@@ -79,17 +85,27 @@
           (checked(1, get_option('view_namesite_video'), false))
         ) {
       ?>
-        <div class="jumbtitle">
-          <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>">
-          <h1><?php bloginfo('title'); ?></h1>
+        <div class="jumbtitle my-4">
+          <img src="<?php echo get_option('img_logo') ?>"
+               class="logo"
+               alt="<?php bloginfo('title'); ?>"
+          />
+          <h1>
+            <?php bloginfo('title'); ?>
+          </h1>
         </div>
       <?php } elseif(checked(1, get_option('view_logo_video'), false)){ ?>
-        <div class="jumbtitle">
-          <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>">
+        <div class="jumbtitle pt-4">
+          <img src="<?php echo get_option('img_logo') ?>"
+               class="logo logo-center"
+               alt="<?php bloginfo('title'); ?>"
+          />
         </div>
       <?php } elseif(checked(1, get_option('view_namesite_video'), false)) {?>
-        <div class="jumbtitle">
-          <h1 style="padding-top:15%"><?php bloginfo('title'); ?></h1>
+        <div class="jumbtitle pt-6">
+          <h1 class="title-center">
+            <?php bloginfo('title'); ?>
+          </h1>
         </div>
       <?php } ?>
     </div>
@@ -107,7 +123,7 @@
             <span class="icons flaticon-localization"></span>
             <p><?php echo get_option('adresse') ?></p>
           </li>
-          <li class="item-info-contact">
+          <li class="item-info-contact invible">
             <p> | </p>
           </li>
           <li class="item-info-contact">
@@ -138,7 +154,7 @@
 <section id="bg-image" style="background-image: url(<?php echo get_option('add_image') ?>)">
   <div class="filter">
     <?php if(checked(1, get_option('yes_message_image'), false)){ ?>
-      <div class="container" style="padding-top:5%">
+      <div class="container message" style="">
         <div class="row jumbtitle">
           <?php
             if(
@@ -146,33 +162,39 @@
               (checked(1, get_option('view_namesite_image'), false))
             ){
           ?>
-            <div class="col-md-3 col-12">
-              <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>" style="padding-top:10%; width: 14em;" >
+            <div class="col-lg-3 col-12">
+              <img src="<?php echo get_option('img_logo') ?>"
+                   class="logo small-logo"
+                   alt="<?php bloginfo('title'); ?>"
+              />
               <h1 class="small-title">
                 <?php bloginfo('title'); ?>
               </h1>
             </div>
-            <div class="col-md-9 col-12 view-message">
+            <div class="col-lg-9 col-12 view-message">
               <?php echo get_option('message_image'); ?>
             </div>
           <?php } elseif(checked(1, get_option('view_logo_image'), false)) { ?>
-            <div class="col-md-3 col-12">
-              <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>" style="padding-top:10%; width: 14em;" >
+            <div class="col-lg-3 col-12">
+              <img src="<?php echo get_option('img_logo') ?>"
+                   class="logo small-logo"
+                   alt="<?php bloginfo('title'); ?>"
+              />
             </div>
-            <div class="col-md-9 col-12 view-message">
+            <div class="col-lg-9 col-12 view view-message">
               <?php echo get_option('message_image'); ?>
             </div>
           <?php } elseif(checked(1, get_option('view_namesite_image'), false)){ ?>
-            <div class="col-md-3 col-12" style="padding-top:15%">
+            <div class="col-lg-3 col-12  small small-md-3">
               <h1 class="small-title">
                 <?php bloginfo('title'); ?>
               </h1>
             </div>
-            <div class="col-md-9 col-12 view-message" style="padding-top:15%">
+            <div class="col-lg-9 col-12 small small-md-9 view-message">
               <?php echo get_option('message_image'); ?>
             </div>
           <?php } else { ?>
-            <div class="col-12 view-message" style="padding-top:15%">
+            <div class="col-12 small small-msg view-message">
               <?php echo get_option('message_image'); ?>
             </div>
           <?php } ?>
@@ -184,17 +206,27 @@
         (checked(1, get_option('view_namesite_image'), false))
       ) {
     ?>
-      <div class="jumbtitle">
-        <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>">
-        <h1><?php bloginfo('title'); ?></h1>
+      <div class="jumbtitle my-4">
+        <img src="<?php echo get_option('img_logo') ?>"
+             class="logo"
+             alt="<?php bloginfo('title'); ?>"
+        />
+        <h1>
+          <?php bloginfo('title'); ?>
+        </h1>
       </div>
     <?php } elseif(checked(1, get_option('view_logo_image'), false)){ ?>
-      <div class="jumbtitle">
-        <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="<?php bloginfo('title'); ?>">
+      <div class="jumbtitle pt-4">
+        <img src="<?php echo get_option('img_logo') ?>"
+             class="logo logo-center"
+             alt="<?php bloginfo('title'); ?>"
+        />
       </div>
     <?php } elseif(checked(1, get_option('view_namesite_image'), false)) {?>
       <div class="jumbtitle">
-        <h1 style="padding-top:15%"><?php bloginfo('title'); ?></h1>
+        <h1 class="title-center">
+          <?php bloginfo('title'); ?>
+        </h1>
       </div>
     <?php } ?>
   </div>
@@ -212,7 +244,7 @@
           <span class="icons flaticon-localization"></span>
           <p><?php echo get_option('adresse') ?></p>
         </li>
-        <li class="item-info-contact">
+        <li class="item-info-contact invible">
           <p> | </p>
         </li>
         <li class="item-info-contact">
@@ -242,4 +274,6 @@
 
 
 
-<?php //get_footer(); ?>
+<span style="display:none">
+  <?php get_footer(); ?>
+</span>

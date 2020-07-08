@@ -90,12 +90,26 @@
   }
 }
 
+@include responsive(MD){
+  .navbar{
+    height: auto;
+    .navbar-collapse{
+      padding-top: 1em;
+      background: rgba(8, 8, 8, .8);
+    }
+  }
+  .nav-item{
+    text-align: center;
+    padding: 1em 0;
+  }
+}
 
 @include responsive(SM){
   .navbar{
     height: auto;
     .navbar-collapse{
       padding-top: 1em;
+      background: rgba(8, 8, 8, .8);
     }
   }
   .nav-item{
@@ -109,6 +123,7 @@
     height: auto;
     .navbar-collapse{
       padding-top: 1em;
+      background: rgba(8, 8, 8, .8);
     }
   }
   .nav-item{

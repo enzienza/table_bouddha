@@ -85,7 +85,8 @@ class MB_info_event{
    */
   public static function save($POST_ID){
     if(
-      current_user_can('publish_posts', $POST)
+      // array_key_exists(self::META_KEY, $_POST) &&
+      current_user_can('publish_posts', $POST_ID)
       && wp_verify_nonce($_POST[self::NONCE], self::NONCE)
     ){
       if(isset($_POST['date_event'])){
