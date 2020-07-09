@@ -7321,6 +7321,34 @@ footer a:hover {
   letter-spacing: 3px;
 }
 
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  .error-code {
+    padding-top: 0;
+  }
+  .error .text-hightlight {
+    padding-bottom: .5em;
+    line-height: 1;
+  }
+  .error-desc p {
+    margin: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  .error-code {
+    padding-top: 5%;
+  }
+  .error .text-hightlight {
+    padding-bottom: .5em;
+    line-height: 1;
+  }
+  .error-desc p {
+    margin-bottom: 15%;
+    margin-top: 5%;
+  }
+}
+
 .big-title {
   display: -webkit-box;
   display: -ms-flexbox;

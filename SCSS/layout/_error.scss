@@ -43,21 +43,63 @@
     font-size: 5em;
   }
 
-  .txt-large{
-    font-size: 3em;
-    font-family: $font-secondary;
-    letter-spacing: 2px;
-    line-height: 2;
+  .txt{
+    &-large{
+      font-size: 3em;
+      font-family: $font-secondary;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+    &-normal{
+      margin-bottom: 3em;
+      font-family: $font-primary-light;
+      letter-spacing: 2px;
+    }
+    &-small{
+      font-size: 70%;
+      letter-spacing: 3px;
+    }
   }
 
-  .txt-normal{
-    margin-bottom: 3em;
-    font-family: $font-primary-light;
-    letter-spacing: 2px;
+
+  @include responsive(MD){
+
   }
 
-  .txt-small{
-    font-size: 70%;
-    letter-spacing: 3px;
+  @include responsive(SM){
+    &-code{
+      padding-top: 0;
+    }
+
+    .text-hightlight{
+      padding-bottom: .5em;
+      line-height: 1;
+    }
+
+    &-desc{
+      p{
+        margin: 5%;
+        margin-bottom: 10%;
+      }
+    }
   }
+
+  @include responsive(XS){
+    &-code{
+      padding-top: 5%;
+    }
+
+    .text-hightlight{
+      padding-bottom: .5em;
+      line-height: 1;
+    }
+
+    &-desc{
+      p{
+        margin-bottom: 15%;
+        margin-top: 5%;
+      }
+    }
+  }
+
 }
