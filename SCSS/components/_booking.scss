@@ -33,4 +33,40 @@
       letter-spacing: 2px;
     }
   }
+
+
+  @include responsive(SM){
+    .icons{
+      font-size: 3em;
+      margin-right: .5em;
+    }
+
+    .booking{
+      &-text {
+      font-size: small;
+      margin-bottom: 0.5em;
+      }
+      &-phone{
+        font-size: medium;
+      }
+    }
+  }
+
+  @include responsive(XS){
+    .icons{
+      font-size: 3em;
+      margin-right: .5em;
+    }
+
+    .booking{
+      &-text {
+      font-size: small;
+      margin-bottom: 0.5em;
+      }
+      &-phone{
+        font-size: medium;
+      }
+    }
+  }
+
 }

@@ -9,9 +9,10 @@
   .nav-item{
     width: 6em;
     text-align: center;
+    color: $color-grey-light;
 
-  .nav-link.active,
-  .nav-item.show{
+    .nav-link.active,
+    .nav-item.show{
         color: $color-primary;
         border: none;
         border-bottom: 3px solid $color-primary;
@@ -49,6 +50,78 @@
       line-height: 15px;
     }
   }
+
+  @include responsive(MD){
+    height: auto;
+    .nav{
+      &-item{
+        width: 7em;
+        height: 8em;
+        border: 1px solid rgba(8, 8, 8, .2);
+        padding: 0;
+        color: $color-grey-light;
+      }
+
+      &-link{
+        padding-top: 1.5em;
+        &:hover{
+          @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+        }
+      }
+    }
+    .nav-link.active,
+    .nav-item.show{
+      @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+    }
+  }
+
+  @include responsive(SM){
+    height: auto;
+    .nav{
+      &-item{
+        width: 6em;
+        height: 7em;
+        border: 1px solid rgba(8, 8, 8, .2);
+        padding: 0;
+        color: $color-grey-light;
+      }
+
+      &-link{
+        padding-top: 1.5em;
+        &:hover{
+          @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+        }
+      }
+    }
+    .nav-link.active,
+    .nav-item.show{
+      @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+    }
+  }
+
+  @include responsive(XS){
+    height: auto;
+    .nav{
+      &-item{
+        width: 7em;
+        height: 8em;
+        border: 1px solid rgba(8, 8, 8, .2);
+        padding: 0;
+        color: $color-grey-light;
+      }
+
+      &-link{
+        padding-top: 1.5em;
+        &:hover{
+          @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+        }
+      }
+    }
+    .nav-link.active,
+    .nav-item.show{
+      @include shadow(0 0 10px rgba(0, 0, 0, .8) !important);
+    }
+  }
 }
 
 .tab-content{
@@ -72,6 +145,8 @@
       line-height: 2;
       text-transform: capitalize;
       font-weight: bold;
+      text-shadow: 4px 2px 4px rgba(9, 9, 9, .9);
+      letter-spacing: 2px;
     }
 
     table{
@@ -86,18 +161,21 @@
       }
 
       td{
-        padding: 0;
+        padding: 0 .5em;
         border: none;
         border-collapse: collapse;
 
         &:first-child{
-          text-align: center;
+          text-align: right;
           padding-left: .5em;
+          width: 10%;
+          padding-right: 2em;
         }
 
         &:last-child{
-          text-align: right;
+          text-align: left;
           padding-right: 2em;
+          width: 10%;
         }
       }
     }
@@ -106,7 +184,97 @@
       line-height: 2;
       padding-top: 1em;
       text-align: center;
-      text-shadow: 4px 2px 4px rgba(9,9,9,0.9);
+      text-shadow: 4px 2px 4px rgba(9, 9, 9, .9);
+      letter-spacing: 1px;
+    }
+  }
+
+
+
+
+  @include responsive(MD){
+    .tab-pane{
+      table{
+        td{
+          padding: .5em;
+          &:first-child{
+            padding-right: 1em;
+            padding-left: 1em;
+          }
+          &:last-child{
+            padding-right: 1em;
+            padding-left: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(SM){
+    .tab-pane{
+      h2{
+        font-size: medium;
+      }
+
+      table{
+        font-size: small;
+        tr{
+
+        }
+
+        td{
+          line-height: 1;
+          padding: .5em;
+
+          &:first-child{
+            text-align: right;
+            padding-right: 1em;
+          }
+          &:last-child{
+            padding-right: 0;
+            padding-left: 1em;
+          }
+        }
+      }
+
+      p{
+        line-height: 1.5;
+        font-size: 1em;
+      }
+    }
+  }
+
+  @include responsive(XS){
+    .tab-pane{
+      h2{
+        font-size: medium;
+      }
+
+      table{
+        font-size: small;
+        tr{
+
+        }
+
+        td{
+          line-height: 1;
+          padding: .5em;
+
+          &:first-child{
+            text-align: right;
+            padding-right: 1em;
+          }
+          &:last-child{
+            padding-right: 0;
+            padding-left: 1em;
+          }
+        }
+      }
+
+      p{
+        line-height: 1.5;
+        font-size: 1em;
+      }
     }
   }
 }

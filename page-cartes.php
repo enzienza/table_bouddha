@@ -24,7 +24,9 @@
     <div class="filter">
       <?php if(checked(1, get_option('yex_message_cartepage'), false)){ ?>
         <div class="jumb-message container">
-          <h1 class="msg-title"><?php echo get_option('title_hero_cartepage'); ?></h1>
+          <h1 class="msg-title">
+            <?php echo get_option('title_hero_cartepage'); ?>
+          </h1>
           <p class="msg-text">
             <?php echo get_option('text_hero_cartepage'); ?>
           </p>
@@ -36,17 +38,27 @@
             (checked(1, get_option('view_namesite_cartepage'), false))
           ){
         ?>
-          <div class="jumbtitle">
-            <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="">
-            <h1><?php bloginfo('title'); ?></h1>
+          <div class="jumb-hero">
+            <img src="<?php echo get_option('img_logo') ?>"
+                 class="logo"
+                 alt="<?php bloginfo('title'); ?>"
+            />
+            <h1>
+              <?php bloginfo('title'); ?>
+            </h1>
           </div>
         <?php } elseif(checked(1, get_option('view_logo_cartepage'), false)){ ?>
-          <div class="jumbtitle">
-            <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="">
+          <div class="jumb-hero">
+            <img src="<?php echo get_option('img_logo') ?>"
+                 class="logo logo-center"
+                 alt="<?php bloginfo('title'); ?>"
+            />
           </div>
         <?php } elseif(checked(1, get_option('view_namesite_cartepage'), false)){ ?>
-          <div class="jumbtitle">
-            <h1><?php bloginfo('title'); ?></h1>
+          <div class="jumb-hero">
+            <h1 class="title-center">
+              <?php bloginfo('title'); ?>
+            </h1>
           </div>
         <?php } ?>
 
@@ -58,9 +70,14 @@
 <?php } else { ?>
   <section class="hero" style="background-image: url()">
     <div class="filter">
-      <div class="jumbtitle">
-        <img src="<?php echo get_option('img_logo') ?>" class="logo" alt="">
-        <h1><?php bloginfo('title'); ?></h1>
+      <div class="jumb-hero">
+        <img src="<?php echo get_option('img_logo') ?>"
+             class="logo"
+             alt="<?php bloginfo('title') ?>"
+        />
+        <h1>
+          <?php bloginfo('title'); ?>
+        </h1>
       </div>
     </div>
   </section>
@@ -75,8 +92,10 @@
 ?>
 
 <?php if(checked(1, get_option('hidden_info_cartepage'), false)){ ?>
-  <section class="info-page container" style="padding-top:5%">
-    <h1><?php echo get_option('title_info_cartepage'); ?></h1>
+  <section class="info-page title-info container">
+    <h1>
+      <?php echo get_option('title_info_cartepage'); ?>
+    </h1>
     <p class="flip">
       <span class="deg1"></span>
       <span class="deg2"></span>
@@ -85,9 +104,11 @@
   </section>
 <?php } else { ?>
   <section class="info-page container">
-    <div class="row">
+    <div class="row box-mobile">
       <div class="col-md-8 col-12">
-        <h1><?php echo get_option('title_info_cartepage'); ?></h1>
+        <h1>
+          <?php echo get_option('title_info_cartepage'); ?>
+        </h1>
         <p class="flip">
           <span class="deg1"></span>
           <span class="deg2"></span>
@@ -97,8 +118,11 @@
           <?php echo get_option('text_info_cartepage'); ?>
         </p>
       </div>
-      <div class="col-md-4 col-12 img-info">
-        <img src="<?php echo get_option('image_info_cartepage') ?>" class="" alt="">
+      <div class="col-md-4 col-12 img-info invible">
+        <img src="<?php echo get_option('image_info_cartepage') ?>"
+             class=""
+             alt=""
+        />
       </div>
     </div>
   </section>
@@ -110,11 +134,9 @@
    * Filtre / tabs
    */
 ?>
-<section class="container my-5">
+<section class="container main-cartepage my-5">
 
   <ul class="nav nav-tabs">
-
-
     <?php
         wp_reset_postdata();
 
