@@ -5449,30 +5449,6 @@ a.text-dark:hover, a.text-dark:focus {
 $tablet_width: 768px;
 $desktop_width: 1168px;
 $wide_width: 1379px; */
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.animated .infinite {
-  animation-iteration-count: infinites;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -6416,6 +6392,108 @@ body {
   }
 }
 
+.card-event {
+  height: 280px;
+  max-height: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-event:hover {
+  -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+  box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
+}
+
+.card-event:hover .btn {
+  opacity: 1;
+}
+
+.card-event:hover .card-body {
+  height: 120px;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  left: 15px;
+  z-index: 2;
+  text-align: center;
+  background: rgba(33, 37, 41, 0.95);
+}
+
+.card-event .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: .5em;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+}
+
+.card-event img {
+  width: 100%;
+  max-height: 180px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-event .card-body {
+  height: 100px;
+  -webkit-transition: height .5s ease 0s;
+  -o-transition: height .5s ease 0s;
+  transition: height .5s ease 0s;
+}
+
+.card-event .block-info {
+  margin-bottom: .5em;
+}
+
+.card-event .item-info-event {
+  font-size: 65%;
+  /* margin-right: 5px; */
+}
+
+.card-event .btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F5A623;
+  color: #F5A623;
+  border-radius: 5px;
+  margin: 0 5em;
+  padding: .5em;
+  overflow: hidden;
+  opacity: 0;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
+  height: 2.5em;
+}
+
+.card-event .btn::before, .card-event .btn::after {
+  display: block;
+  clear: both;
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  .card-event {
+    height: 350px;
+    max-height: 400px;
+  }
+  .card-event img {
+    max-height: 300px;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  .card-event {
+    height: 280px;
+  }
+}
+
 .table-horaire {
   font-size: smaller;
   width: 75%;
@@ -7333,6 +7411,17 @@ footer a:hover {
     margin: 5%;
     margin-bottom: 10%;
   }
+  .error-emoji {
+    padding-top: 10%;
+  }
+  .error .txt-large {
+    font-size: 2em;
+  }
+  .error .txt-normal {
+    font-size: 1em;
+    margin: 1em;
+    margin-bottom: 10%;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
@@ -7346,6 +7435,17 @@ footer a:hover {
   .error-desc p {
     margin-bottom: 15%;
     margin-top: 5%;
+  }
+  .error-emoji {
+    padding-top: 10%;
+  }
+  .error .txt-large {
+    font-size: 2em;
+  }
+  .error .txt-normal {
+    font-size: 1em;
+    margin: 1em;
+    margin-bottom: 15%;
   }
 }
 
@@ -7362,6 +7462,31 @@ footer a:hover {
   font-family: "philosopher";
   text-transform: uppercase;
   line-height: 2;
+  color: #F5A623;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
+}
+
+@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+  .big-title {
+    padding-top: calc(20% * 2);
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  .big-title {
+    padding-top: calc(20% / 1.5);
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  .big-title {
+    padding-top: calc(20% * 3);
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1em;
+  }
 }
 
 .block-info {
@@ -7371,6 +7496,7 @@ footer a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
 }
 
 .block-info .item-info-event {
@@ -7391,90 +7517,19 @@ footer a:hover {
   letter-spacing: 3px;
 }
 
-.single-event img {
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  .block-info .item-info-event {
+    font-size: 1em;
+  }
+}
+
+.content-event img {
   -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
   box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
 }
 
-.card-event {
-  height: 300px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.card-event:hover {
-  -webkit-box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
-  box-shadow: 0 0px 10px rgba(9, 9, 9, 0.9);
-}
-
-.card-event:hover .btn {
-  opacity: 1;
-}
-
-.card-event:hover .card-body {
-  height: 120px;
-  position: absolute;
-  bottom: 30px;
-  right: 15px;
-  left: 15px;
-  z-index: 2;
-  text-align: center;
-  background: #212529;
-}
-
-.card-event .card-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: .5em;
-  letter-spacing: 3px;
-  font-size: 1.5em;
-}
-
-.card-event img {
-  width: 100%;
-  max-height: 180px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.card-event .card-body {
-  height: 100px;
-  -webkit-transition: height .5s ease 0s;
-  -o-transition: height .5s ease 0s;
-  transition: height .5s ease 0s;
-}
-
-.card-event .block-info {
-  margin-bottom: .5em;
-}
-
-.card-event .item-info-event {
-  font-size: 65%;
-  /* margin-right: 5px; */
-}
-
-.card-event .btn {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #F5A623;
-  color: #F5A623;
-  border-radius: 5px;
-  margin: 0 5em;
-  padding: .5em;
-  overflow: hidden;
-  opacity: 0;
-  text-shadow: 4px 2px 4px rgba(9, 9, 9, 0.9);
-}
-
-.card-event .btn::before, .card-event .btn::after {
-  display: block;
-  clear: both;
-  content: '';
-  width: 0;
-  height: 0;
+@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+  #single-event, .filter {
+    height: 80vh;
+  }
 }

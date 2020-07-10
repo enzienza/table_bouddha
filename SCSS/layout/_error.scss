@@ -82,6 +82,20 @@
         margin-bottom: 10%;
       }
     }
+    &-emoji{
+      padding-top: 10%;
+    }
+
+    .txt{
+      &-large{
+        font-size: 2em;
+      }
+      &-normal{
+        font-size: 1em;
+        margin: 1em;
+        margin-bottom: 10%;
+      }
+    }
   }
 
   @include responsive(XS){
@@ -98,6 +112,21 @@
       p{
         margin-bottom: 15%;
         margin-top: 5%;
+      }
+    }
+
+    &-emoji{
+      padding-top: 10%;
+    }
+
+    .txt{
+      &-large{
+        font-size: 2em;
+      }
+      &-normal{
+        font-size: 1em;
+        margin: 1em;
+        margin-bottom: 15%;
       }
     }
   }

@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-<section class="hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+<section id="single-event" class="hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
 	<div class="filter">
 		<h1 class="big-title">
 			<?php the_title(); ?>
@@ -40,7 +40,7 @@
 
 <section class="container my-5 text-center">
 	<div class="row">
-		<div class="col-12 single-event">
+		<div class="col-12 content-event">
 			<?php the_content(); ?>
 		</div>
 	</div>
