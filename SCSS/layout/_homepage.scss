@@ -19,7 +19,7 @@
       height: auto;
       @include align-items(center);
       &-center{
-        padding-top: 4em;
+        padding-top: calc(100% / 5);
       }
     }
     h1{

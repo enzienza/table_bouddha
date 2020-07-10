@@ -41,7 +41,7 @@
                 (checked(1, get_option('view_namesite_video'), false))
               ){
             ?>
-              <div class="col-lg-3 col-12">
+              <div class="col-lg-3 col-12 animated fadeInLeft">
                 <img src="<?php echo get_option('img_logo') ?>"
                      class="logo small-logo"
                      alt="<?php bloginfo('title'); ?>"
@@ -50,30 +50,30 @@
                   <?php bloginfo('title'); ?>
                 </h1>
               </div>
-              <div class="col-lg-9 col-12 view-message">
+              <div class="col-lg-9 col-12 animated fadeInRight view-message">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } elseif(checked(1, get_option('view_logo_video'), false)) { ?>
-              <div class="col-lg-3 col-12">
+              <div class="col-lg-3 col-12 animated fadeInLeft">
                 <img src="<?php echo get_option('img_logo') ?>"
                      class="logo small-logo"
                      alt="<?php bloginfo('title'); ?>"
                 />
               </div>
-              <div class="col-lg-9 col-12 view view-message">
+              <div class="col-lg-9 col-12 view view-message animated fadeInRight">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } elseif(checked(1, get_option('view_namesite_video'), false)){ ?>
-              <div class="col-lg-3 col-12  small small-md-3" style="">
+              <div class="col-lg-3 col-12  small small-md-3 animated fadeInLeft" style="">
                 <h1 class="small-title">
                   <?php bloginfo('title'); ?>
                 </h1>
               </div>
-              <div class="col-lg-9 col-12 small small-md-9 view-message">
+              <div class="col-lg-9 col-12 small small-md-9 view-message animated fadeInRight">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } else { ?>
-              <div class="col-12 small view-message" style="">
+              <div class="col-12 small view-message animated fadeIn" style="">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } ?>
@@ -87,23 +87,23 @@
       ?>
         <div class="jumbtitle my-4">
           <img src="<?php echo get_option('img_logo') ?>"
-               class="logo"
+               class="logo animated fadeInRight"
                alt="<?php bloginfo('title'); ?>"
           />
-          <h1>
+          <h1 class="animated fadeInLeft">
             <?php bloginfo('title'); ?>
           </h1>
         </div>
       <?php } elseif(checked(1, get_option('view_logo_video'), false)){ ?>
         <div class="jumbtitle pt-4">
           <img src="<?php echo get_option('img_logo') ?>"
-               class="logo logo-center"
+               class="logo logo-center animated fadeIn"
                alt="<?php bloginfo('title'); ?>"
           />
         </div>
       <?php } elseif(checked(1, get_option('view_namesite_video'), false)) {?>
         <div class="jumbtitle pt-6">
-          <h1 class="title-center">
+          <h1 class="title-center animated zoomIn">
             <?php bloginfo('title'); ?>
           </h1>
         </div>

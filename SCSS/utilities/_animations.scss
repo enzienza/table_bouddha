@@ -1,0 +1,18 @@
+// main: ../style.scss
+.animated{
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+
+  .infinite{
+    animation-iteration-count: infinites
+  }
+}
+
+
+@import 'animations/fadeIn';
+@import 'animations/fadeInDown';
+@import 'animations/fadeInRight';
+@import 'animations/fadeInLeft';
+@import 'animations/fadeInUp';
+@import 'animations/zoomIn';
