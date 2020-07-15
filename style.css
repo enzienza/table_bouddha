@@ -7171,9 +7171,9 @@ footer a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
-  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
 }
 
 .filter .jumbtitle {
@@ -7278,9 +7278,9 @@ footer a:hover {
 
 #bg-image .filter {
   height: 100vh;
-  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
-  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.35), black);
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
+  background-image: -o-radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2), black);
 }
 
 @media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {

@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  @include filter-gradient(circle, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+  @include filter-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
 
   .jumbtitle{
     text-align: center;
@@ -96,7 +96,7 @@
 
   .filter{
     height: 100vh;
-    @include filter-gradient(circle, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+    @include filter-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
   }
 }
 
