@@ -6520,6 +6520,27 @@ body {
   letter-spacing: 1px;
 }
 
+.tab-content .table-two-column table td:first-child {
+  width: 80% !important;
+  text-align: justify !important;
+  line-height: 1.5 !important;
+  padding: 1em !important;
+}
+
+.tab-content .table-two-column table td:last-child {
+  text-align: center !important;
+  padding-right: 0em !important;
+}
+
+.tab-content .list-item {
+  list-style: circle;
+  margin-left: 1.5em;
+}
+
+.tab-content .list-item li {
+  padding-left: 5px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
   .tab-content .tab-pane table td {
     padding: .5em;
@@ -7357,6 +7378,9 @@ footer a:hover {
   #bg-video .filter {
     height: 100vh;
   }
+  #bg-video .filter .jumbtitle {
+    padding-top: calc(10% + 4%);
+  }
   #bg-video .filter .jumbtitle .logo {
     width: calc(100% / 8);
   }
@@ -7456,6 +7480,9 @@ footer a:hover {
   }
   #bg-video .filter {
     height: 100vh;
+  }
+  #bg-video .filter .jumbtitle {
+    padding-top: calc(10% + 5%);
   }
   #bg-video .filter .jumbtitle .logo {
     width: calc(100% / 5);

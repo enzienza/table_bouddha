@@ -15,14 +15,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-12 block-location">
-        <h2>Coordonne</h2>
+        <h2>Coordonnées</h2>
         <div class="row block-logo">
           <div class="col-2">
 
             <img class="logo"
                  src="<?php echo get_template_directory_uri().'/assets/img/logo-grey.png' ?>"
                  alt=""
-            >
+            />
 
           </div>
           <div class="col blog-address">
@@ -59,7 +59,7 @@
 
 
       <div class="col-md-4 col-12 block-link">
-        <h2>Lien utile</h2>
+        <h2>Liens utiles</h2>
         <?php
           wp_nav_menu([
             'theme_location' => 'footer',
@@ -69,7 +69,7 @@
          ?>
       </div>
       <div class="col-md-4 col-12 block-timetable">
-        <h2>horaire</h2>
+        <h2>Horaires</h2>
         <?php get_template_part('parts/footer/horaire'); ?>
       </div>
     </div>

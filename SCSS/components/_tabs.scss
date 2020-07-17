@@ -187,9 +187,36 @@
       text-shadow: 4px 2px 4px rgba(9, 9, 9, .9);
       letter-spacing: 1px;
     }
+
+
+
   }
 
+  .table-two-column{
+    table{
+      td{
+        &:first-child{
+          width: 80% !important;
+          text-align: justify !important;
+          line-height: 1.5 !important;
+          padding: 1em !important;
+        }
 
+        &:last-child {
+          text-align: center !important;
+          padding-right: 0em !important;
+        }
+      }
+    }
+  }
+
+  .list-item{
+    list-style: circle;
+    margin-left: 1.5em;
+    li{
+      padding-left: 5px;
+    }
+  }
 
 
   @include responsive(MD){

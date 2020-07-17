@@ -20,14 +20,24 @@
 <?php if(checked(1, get_option('yes_video'), false)) { ?>
   <section id="bg-video">
     <?php if(checked(1, get_option('sound_video'), false)){ ?>
-      <video autoplay loop id="video-background">
-        <source src="<?php echo get_option('add_video'); ?>" type="video/mp4">
-        <source src="<?php echo get_option('add_video'); ?>" type="video/ogg">
+      <video autoplay="true" loop="true" muted id="video-background">
+        <source src="<?php echo get_option('add_video'); ?>"
+                type="video/mp4">
+        <source src="<?php echo get_option('add_video'); ?>"
+                type="video/ogg">
       </video>
+      <audio autoplay="true" loop="true">
+        <source src="<?php echo get_template_directory_uri().'/assets/media/video-1592479640.mp3' ?>"
+                type="audio/mpeg">
+        <source src="<?php echo get_template_directory_uri().'/assets/media/video-1592479640.mp3' ?>"
+                type="audio/ogg">
+      </audio>
     <?php } else { ?>
-      <video autoplay loop muted id="video-background">
-        <source src="<?php echo get_option('add_video'); ?>" type="video/mp4">
-        <source src="<?php echo get_option('add_video'); ?>" type="video/ogg">
+      <video autoplay="true" loop="true" muted  id="video-background">
+        <source src="<?php echo get_option('add_video'); ?>"
+                type="video/mp4">
+        <source src="<?php echo get_option('add_video'); ?>"
+                type="video/ogg">
       </video>
     <?php } ?>
 
@@ -64,7 +74,7 @@
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } elseif(checked(1, get_option('view_namesite_video'), false)){ ?>
-              <div class="col-lg-3 col-12  small small-md-3 animated fadeInLeft" style="">
+              <div class="col-lg-3 col-12  small small-md-3 animated fadeInLeft">
                 <h1 class="small-title">
                   <?php bloginfo('title'); ?>
                 </h1>
@@ -73,7 +83,7 @@
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } else { ?>
-              <div class="col-12 small view-message animated fadeIn" style="">
+              <div class="col-12 small view-message animated fadeIn">
                 <?php echo get_option('message_video'); ?>
               </div>
             <?php } ?>
@@ -101,7 +111,7 @@
                alt="<?php bloginfo('title'); ?>"
           />
         </div>
-      <?php } elseif(checked(1, get_option('view_namesite_video'), false)) {?>
+      <?php } elseif(checked(1, get_option('view_namesite_video'), false)) { ?>
         <div class="jumbtitle pt-6">
           <h1 class="title-center animated zoomIn">
             <?php bloginfo('title'); ?>
@@ -154,7 +164,7 @@
 <section id="bg-image" style="background-image: url(<?php echo get_option('add_image') ?>)">
   <div class="filter">
     <?php if(checked(1, get_option('yes_message_image'), false)){ ?>
-      <div class="container message" style="">
+      <div class="container message" >
         <div class="row jumbtitle">
           <?php
             if(
@@ -222,7 +232,7 @@
              alt="<?php bloginfo('title'); ?>"
         />
       </div>
-    <?php } elseif(checked(1, get_option('view_namesite_image'), false)) {?>
+    <?php } elseif(checked(1, get_option('view_namesite_image'), false)) { ?>
       <div class="jumbtitle">
         <h1 class="title-center">
           <?php bloginfo('title'); ?>

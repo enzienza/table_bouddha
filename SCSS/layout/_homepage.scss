@@ -12,7 +12,7 @@
   .jumbtitle{
     text-align: center;
     color: $color-light;
-    padding-top:10%;
+    padding-top: 10%;
 
     .logo{
       width: 14em;
@@ -208,6 +208,7 @@
     .filter{
       height: 100vh;
       .jumbtitle{
+        padding-top: calc(10% + 4%);
         .logo{
           width: calc(100% / 8);
         }
@@ -338,6 +339,7 @@
       height: 100vh;
 
       .jumbtitle{
+        padding-top: calc(10% + 5%);
         .logo{
           width: calc(100% / 5);
         }

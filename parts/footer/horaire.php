@@ -2,7 +2,7 @@
   <tr class="item-heure">
     <td class="day">Lundi</td>
     <?php if(checked(1, get_option('lundi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('lundi_mide_de'); ?></span> -
@@ -16,7 +16,7 @@
   <tr class="item-heure">
     <td class="day">Mardi</td>
     <?php if(checked(1, get_option('mardi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('mardi_mide_de'); ?></span> -
@@ -30,7 +30,7 @@
   <tr class="item-heure">
     <td class="day">Mercredi</td>
     <?php if(checked(1, get_option('mercredi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('mercredi_mide_de'); ?></span> -
@@ -44,7 +44,7 @@
   <tr class="item-heure">
     <td class="day">Jeudi</td>
     <?php if(checked(1, get_option('jeudi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('jeudi_mide_de'); ?></span> -
@@ -58,7 +58,7 @@
   <tr class="item-heure">
     <td class="day">Vendredi</td>
     <?php if(checked(1, get_option('vendredi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('vendredi_mide_de'); ?></span> -
@@ -72,7 +72,7 @@
   <tr class="item-heure">
     <td class="day">Samedi</td>
     <?php if(checked(1, get_option('samedi_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('samedi_mide_de'); ?></span> -
@@ -86,7 +86,7 @@
   <tr class="item-heure">
     <td class="day">Dimanche</td>
     <?php if(checked(1, get_option('dimanche_fermer'), false)) { ?>
-      <td class="close"><span>Fermer</span></td>
+      <td class="close"><span>Fermé</span></td>
     <?php } else { ?>
       <td class="heure">
         <span><?php echo get_option('dimanche_mide_de'); ?></span> -

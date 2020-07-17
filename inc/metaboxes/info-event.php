@@ -21,7 +21,7 @@ class MB_info_event{
   /**
    *1 - DEFINIR LES VALEURS (repeter)
    */
-  const META_KEY = 'info_event';
+  // const META_KEY = 'info_event';
   const NONCE    = '_info_event';
   const TITLE_MB = 'Information';
   const SCREEN   = array('evenements');
@@ -41,7 +41,7 @@ class MB_info_event{
   public static function add($postType, $POST){
     if(current_user_can('publish_posts', $POST)){
       add_meta_box(
-        self::META_KEY,             // ID_META_BOX
+        'MB_info_event',             // ID_META_BOX
         self::TITLE_MB,             // TITLE_META_BOX
         [self::class, 'render'],    // CALLBACK
         self::SCREEN,               // WP_SCREEN
@@ -85,9 +85,9 @@ class MB_info_event{
    */
   public static function save($POST_ID){
     if(
-      array_key_exists(self::META_KEY, $_POST)
-      && current_user_can('publish_posts', $POST_ID)
-      && wp_verify_nonce($_POST[self::NONCE], self::NONCE)
+      // array_key_exists(self::META_KEY, $_POST) &&
+      current_user_can('publish_posts', $POST_ID)
+      // && wp_verify_nonce($_POST[self::NONCE], self::NONCE)
     ){
       if(isset($_POST['date_event'])){
         update_post_meta(
